@@ -61,7 +61,7 @@ const JobCard = (job: Job) => {
         </div>
         {job.responsibilities && (
           <>
-            <div className="absolute -right-3 -bottom-3 h-11 w-11 bg-papaya-400 rounded-full"></div>
+            <div className="absolute -right-3 -bottom-3 h-10 w-10 bg-papaya-400 rounded-full"></div>
             <IconContext.Provider value={{ className: "text-blue-600 hover:text-blue-300 text-5xl" }}>
               <button className="absolute -right-4 -bottom-4" onClick={handleClick}>
                 <Info />

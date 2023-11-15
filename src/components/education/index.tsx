@@ -1,19 +1,20 @@
 import { useState } from "react";
 import { Qualification } from "../../types";
 import education from "../../data/education.json";
-import {QualificationModal} from "./modal";
+import { QualificationModal } from "./modal";
 import { BsInfoCircleFill as Info } from "react-icons/bs";
-import {IconContext} from "react-icons";
+import { IconContext } from "react-icons";
 
 export const Education: React.FC = () => {
   return (
     <section
-      id="Experience"
+      id="Education"
       className="bg-white py-8 pt-20 pb-4 min-h-[calc(100vh_-_70px)] flex flex-col justify-center"
     >
       <div className="mx-auto">
         <h2 className="text-6xl font-semibold mb-4 font-mjk-bold">Education and Training</h2>
-        {/* <!-- Work Experience Cards --> */}
+
+        {/* <!-- Education Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
           {education.qualifications.map((qualification: Qualification) => (
             <QualificationCard {...qualification} key={qualification.id} />
@@ -36,7 +37,7 @@ const QualificationCard = (qualification: Qualification) => {
 
   return (
     <>
-      <div className="relative bg-papaya-400 p-4 rounded-lg shadow-md m-5 h-40 w-[400px]">
+      <div className="relative bg-charcoal-800 p-4 rounded-lg shadow-md m-5 h-40 w-[400px]">
         <div className="flex items-center flex-col mb-5 min-h-[58px] grow">
           <div className="h-14">
             <img
@@ -53,7 +54,7 @@ const QualificationCard = (qualification: Qualification) => {
         </div>
         {qualification.description && (
           <>
-            <div className="absolute -right-3 -bottom-3 h-11 w-11 bg-papaya-400 rounded-full"></div>
+            <div className="absolute -right-3 -bottom-3 h-10 w-10 bg-papaya-400 rounded-full"></div>
             <IconContext.Provider value={{ className: "text-blue-600 hover:text-blue-300 text-5xl" }}>
               <button className="absolute -right-4 -bottom-4" onClick={handleClick}>
                 <Info />

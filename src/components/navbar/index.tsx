@@ -31,22 +31,22 @@ export const Navbar: React.FC = () => {
               About
             </li>
           </Link>
-          <Link spy={true} smooth={true} to="Projects">
-            <li
-              className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
-              onClick={handleClick}
-            >
-              Projects
-            </li>
-          </Link>
           <Link spy={true} smooth={true} to="Experience">
             <li
               className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
               onClick={handleClick}
             >
-              Work Experience
+              Professional Experience
             </li>
           </Link>
+          {/* <Link spy={true} smooth={true} to="Projects">
+                <li
+                  className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
+                  onClick={handleClick}
+                >
+                  Projects
+                </li>
+              </Link> */}
           <Link spy={true} smooth={true} to="Education">
             <li
               className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
@@ -55,14 +55,14 @@ export const Navbar: React.FC = () => {
               Education
             </li>
           </Link>
-          <Link spy={true} smooth={true} to="Pastimes">
+          {/* <Link spy={true} smooth={true} to="Pastimes">
             <li
               className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
               onClick={handleClick}
             >
               Pastimes
             </li>
-          </Link>
+          </Link> */}
           <Link spy={true} smooth={true} to="Contact">
             <li
               className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
@@ -95,26 +95,26 @@ export const Navbar: React.FC = () => {
                   About
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="Projects">
-                <li className="text-blue-600 hover:text-blue-300 border-b-2 border-white hover:border-blue-300 transition cursor-pointer">
-                  Projects
-                </li>
-              </Link>
               <Link spy={true} smooth={true} to="Experience">
                 <li className="text-blue-600 hover:text-blue-300 border-b-2 border-white hover:border-blue-300 transition cursor-pointer">
                   Experience
                 </li>
               </Link>
+              {/* <Link spy={true} smooth={true} to="Projects">
+                <li className="text-blue-600 hover:text-blue-300 border-b-2 border-white hover:border-blue-300 transition cursor-pointer">
+                  Projects
+                </li>
+              </Link> */}
               <Link spy={true} smooth={true} to="Education">
                 <li className="text-blue-600 hover:text-blue-300 border-b-2 border-white hover:border-blue-300 transition cursor-pointer">
                   Education
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="Pastimes" onClick={handleClick}>
+              {/* <Link spy={true} smooth={true} to="Pastimes" onClick={handleClick}>
                 <li className="text-blue-600 hover:text-blue-300 border-b-2 border-white hover:border-blue-300 transition cursor-pointer">
                   Pastimes
                 </li>
-              </Link>
+              </Link> */}
               <Link spy={true} smooth={true} to="Contact" onClick={handleClick}>
                 <li className="text-blue-600 hover:text-blue-300 border-b-2 border-white hover:border-blue-300 transition cursor-pointer">
                   Contact
