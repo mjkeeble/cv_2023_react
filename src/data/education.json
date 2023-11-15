@@ -1,0 +1,65 @@
+{
+  "qualifications": [
+    {
+      "qualificationTitle": "Web Development Bootcamp",
+      "qualificationInstitute": "Ironhack Berlin",
+      "qualificationStartDate": "2020-10-01",
+      "qualificationEndDate": "2020-12-28",
+      "qualificationLogo": "filename",
+      "qualificationDocument": "filename",
+      "qualificationDescription": [
+        "HTML5, CSS3 & responsive design",
+        "Object-oriented programming with JavaScript",
+        "Version control with Git and GitHub",
+        "Web Development frameworks (Express backend, React frontend)",
+        "Non-relational databases (MongoDB)",
+        "Rest API integration and deployment"
+      ]
+    },
+    {
+      "qualificationTitle": "Certified Database Developer in SQL Server",
+      "qualificationInstitute": "Institut für Lernsysteme (ILS), Hamburg",
+      "qualificationStartDate": "2019-10-01",
+      "qualificationEndDate": "2020-03-31",
+      "qualificationLogo": "filename",
+      "qualificationDocument": "filename",
+      "qualificationDescription": [
+        "Development of relational databases",
+        "SQL",
+        "Reports",
+        "Frontend development with Windows Forms and Visual Basic",
+        "Server-side programming with triggers, procedures and functions",
+        "SQL Server administration"
+      ],
+      "qualificationFlaggedText": [
+        "15-month course completed in 7 months",
+        "Top-grade pass of 1,0 - 100% scores achieved on all assignments"
+      ]
+    },
+    {
+      "qualificationTitle": "Professional Certificate in Accounting",
+      "qualificationInstitute": "The Open University, UK",
+      "qualificationStartDate": "2011-10-01",
+      "qualificationEndDate": "2015-07-31",
+      "qualificationLogo": "filename",
+      "qualificationDescription": [
+        "Bookkeeping",
+        "Management accounting",
+        "Financial accounting"
+      ],
+      "qualificationComment": "Graduation certificate available on request"
+    },
+    {
+      "qualificationTitle": "Banking, Insurance & Finance",
+      "qualificationInstitute": "University College of North Wales, Bangor UK",
+      "qualificationStartDate": "1991-10-01",
+      "qualificationEndDate": "1995-07-31",
+      "qualificationLogo": "filename",
+      "qualificationDescription": [
+        "Bachelor Of Arts Degree",
+        "Second Class Honours, Division 1"
+      ],
+      "qualificationComment": "Graduation certificate available on request"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "jobs": [
+    {
+      "id": "6",
+      "companyName": "RightNow GmbH",
+      "companyLocation": "Berlin/Remote",
+      "companyLogo": "rightNow.svg",
+      "picture": "traxx.jpg",
+      "pictureSource": "© Bombardier",
+      "positions": [
+        {
+          "positionTitle": "Junior Developer",
+          "positionStartDate": "2021-07-05T09:00:00+01:00"
+        }
+      ],
+      "responsibilities": [
+        "Contributed to the conception and full-stack development of internal process and administra%on tools with TypeScript and PostgreSQL, GraphQL, SQL and React",
+        "Developed unit (Jest) and end-to-end (Cypress) tests",
+        "Agile-based product management including scoping, defini%on and delivery of new system areas, task definition and sprint management"
+      ]
+    },
+    {
+      "id": "5",
+      "companyName": "Bombardier Transportation",
+      "companyCurrentName": "Alstom SA",
+      "companyLocation": "Berlin",
+      "companyLogo": "BT_logo.png",
+      "picture": "traxx.jpg",
+      "pictureSource": "© Bombardier",
+      "positions": [
+        {
+          "positionTitle": "Head of Structured Finance Central Team & Governance",
+          "positionStartDate": "2017-03-10T09:00:00+01:00",
+          "positionEndDate": "2020-03-31T09:00:00+01:00"
+        },
+        {
+          "positionTitle": "Manager, Structured Finance",
+          "positionStartDate": "2000-06-01T09:00:00+01:00",
+          "positionEndDate": "2017-03-09T09:00:00+01:00"
+        }
+      ],
+      "responsibilities": [
+        "Coordinated financial and credit risk governance for more than 400 major bids. Analysed risk/return profiles and briefed the CFO on a weekly basis",
+        "Managed a €500 million supply-chain finance programme with over 140 suppliers.",
+        "Developed and organised structured financial and commercial solutions worth over €500 million for customers",
+        "Implemented database tools for effective management of supplier financing contracts",
+        "Oversaw the development and auditing of financial models for multi-billion-euro bids",
+        "Managed the replacement of over 380 guarantees for suppliers and customers against short deadlines",
+        "Developed and delivered internal training on financial topics"
+      ]
+    },
+    {
+      "id": "4",
+      "companyName": "Elmar Hertzog und Partner Management Consultants GmbH",
+      "companyShortName": "Hertzog & Partner",
+      "companyCurrentName": "WAGENER & HERBST Management Consultants GmbH",
+      "companyLocation": "Potsdam",
+      "companyLogo": "hertzog_und_partner.png",
+      "picture": "",
+      "pictureSource": "",
+      "positions": [
+        {
+          "positionTitle": "International Project Co-ordinator and Training Consultant",
+          "positionStartDate": "1998-03-01T09:00:00+01:00",
+          "positionEndDate": "2000-03-31T09:00:00+01:00"
+        }
+      ],
+      "responsibilities": [
+        "Authored management training materials and managed two EU projects: 'Vocational Training Centres in Road Transport' and 'Internal Russian Waterways'",
+        "Prepared business plans for transport training centres in EU accession countries",
+        "Organised a study tour for 30 Russian port managers with topics including general management, finance and marketing"
+      ]
+    },
+    {
+      "id": "3",
+      "companyName": "St. John Ambulance, London District",
+      "companyLocation": "London",
+      "companyLogo": "St-John-Ambulance.png",
+      "picture": "first-aid.jpg",
+      "pictureSource": "<a href='https://www.freepik.com/free-photo/c_19140537.htm#query=first%20aid&position=8&from_view=search&track=ais&uuid=39e99351-3fcd-484d-8ec2-a8fcd482488d'>Image by rawpixel.com</a> on Freepik",
+      "positions": [
+        {
+          "positionTitle": "Schools Project Officer, First Aid Trainer",
+          "positionStartDate": "1996-04-01T09:00:00+01:00",
+          "positionEndDate": "1997-07-01T09:00:00+01:00"
+        }
+      ],
+      "responsibilities": [
+        "Delivered statutory workplacee first aid training to over 40 participants",
+        "Developed and delivered first aid training courses for school staff",
+        "Conducted outreach with over 50 schools and facilitated the integration of first aid training into the school curriculum at 15 schools"
+      ]
+    },
+    {
+      "id": "2",
+      "companyName": "Midland Bank plc",
+      "companyCurrentName": "HSBC Group",
+      "companyLocation": "Various locations, UK",
+      "companyLogo": "MidlandBank_logo_horizontal.png",
+      "picture": "cash-machine-2.jpg",
+      "pictureSource": "<a href='https://www.freepik.com/free-photo/people-waiting-get-money-from-automated-teller-machine-people-withdrawn-money-from-atm-concept_5072192.htm#query=bank&position=23&from_view=search&track=sph&uuid=ede73f9a-8b25-4ace-8242-abe0bc3d3184'>Image by jcomp</a> on Freepik",
+      "positions": [
+        {
+          "positionTitle": "Sponsored Student/Intern",
+          "positionStartDate": "1991-09-18T09:00:00+01:00",
+          "positionEndDate": "1994-03-18T09:00:00+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "companyName": "Lloyds Bank plc",
+      "companyCurrentName": "Account Services Assistant",
+      "companyLocation": "Brentwood, UK",
+      "companyLogo": "lloyds-bank.png",
+      "picture": "cash-machine.jpg",
+      "pictureSource" : "<a href='https://www.freepik.com/free-photo/cash-machine_905650.htm#query=atm&position=1&from_view=search&track=sph&uuid=203569ad-fe86-4914-8ae3-aba47b37921a'>Image by shayne_ch13</a> on Freepik",
+      "positions": [
+        {
+          "positionTitle": "Account Services Assistent",
+          "positionStartDate": "1990-07-01T09:00:00+01:00",
+          "positionEndDate": "1991-08-31T09:00:00+01:00"
+        }
+      ]
+    }
+  ]
+}
