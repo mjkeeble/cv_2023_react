@@ -1,13 +1,14 @@
 {
   "qualifications": [
     {
-      "qualificationTitle": "Web Development Bootcamp",
-      "qualificationInstitute": "Ironhack Berlin",
-      "qualificationStartDate": "2020-10-01",
-      "qualificationEndDate": "2020-12-28",
-      "qualificationLogo": "filename",
-      "qualificationDocument": "filename",
-      "qualificationDescription": [
+      "id": "4",
+      "title": "Web Development Bootcamp",
+      "institute": "Ironhack Berlin",
+      "startDate": "2020-10-01",
+      "endDate": "2020-12-28",
+      "logo": "logo-ironhack-blue.png",
+      "document": "filename",
+      "description": [
         "HTML5, CSS3 & responsive design",
         "Object-oriented programming with JavaScript",
         "Version control with Git and GitHub",
@@ -17,13 +18,14 @@
       ]
     },
     {
-      "qualificationTitle": "Certified Database Developer in SQL Server",
-      "qualificationInstitute": "Institut für Lernsysteme (ILS), Hamburg",
-      "qualificationStartDate": "2019-10-01",
-      "qualificationEndDate": "2020-03-31",
-      "qualificationLogo": "filename",
-      "qualificationDocument": "filename",
-      "qualificationDescription": [
+      "id": "3",
+      "title": "Certified Database Developer in SQL Server",
+      "institute": "Institut für Lernsysteme (ILS), Hamburg",
+      "startDate": "2019-10-01",
+      "endDate": "2020-03-31",
+      "logo": "ils_logo.jpg",
+      "document": "filename",
+      "description": [
         "Development of relational databases",
         "SQL",
         "Reports",
@@ -31,35 +33,33 @@
         "Server-side programming with triggers, procedures and functions",
         "SQL Server administration"
       ],
-      "qualificationFlaggedText": [
+      "flaggedText": [
         "15-month course completed in 7 months",
         "Top-grade pass of 1,0 - 100% scores achieved on all assignments"
       ]
     },
     {
-      "qualificationTitle": "Professional Certificate in Accounting",
-      "qualificationInstitute": "The Open University, UK",
-      "qualificationStartDate": "2011-10-01",
-      "qualificationEndDate": "2015-07-31",
-      "qualificationLogo": "filename",
-      "qualificationDescription": [
-        "Bookkeeping",
-        "Management accounting",
-        "Financial accounting"
-      ],
-      "qualificationComment": "Graduation certificate available on request"
+      "id": "2",
+      "title": "Professional Certificate in Accounting",
+      "institute": "The Open University, UK",
+      "startDate": "2011-10-01",
+      "endDate": "2015-07-31",
+      "logo": "OU_Master_Logo_Dark_Blue.png",
+      "description": ["Bookkeeping", "Management accounting", "Financial accounting"],
+      "comment": "Graduation certificate available on request"
     },
     {
-      "qualificationTitle": "Banking, Insurance & Finance",
-      "qualificationInstitute": "University College of North Wales, Bangor UK",
-      "qualificationStartDate": "1991-10-01",
-      "qualificationEndDate": "1995-07-31",
-      "qualificationLogo": "filename",
-      "qualificationDescription": [
+      "id":"1",
+      "title": "BA(Hons) Banking, Insurance & Finance",
+      "institute": "University College of North Wales, Bangor UK",
+      "startDate": "1991-10-01",
+      "endDate": "1995-07-31",
+      "logo": "bangor.png",
+      "description": [
         "Bachelor Of Arts Degree",
         "Second Class Honours, Division 1"
       ],
-      "qualificationComment": "Graduation certificate available on request"
+      "comment": "Graduation certificate available on request"
     }
   ]
 }

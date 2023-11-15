@@ -9,10 +9,10 @@ export const Experience: React.FC = () => {
   return (
     <section
       id="Experience"
-      className="bg-white py-8 pt-20 pb-4 min-h-[calc(100vh_-_70px)] flex flex-col justify-center"
+      className="bg-gray-800 py-8 pt-20 pb-4 min-h-[calc(100vh_-_70px)] flex flex-col justify-center"
     >
       <div className="mx-auto">
-        <h2 className="text-6xl font-semibold mb-4 font-mjk-bold">Work Experience</h2>
+        <h2 className="text-6xl font-semibold mb-4 font-mjk-bold">Professional Experience</h2>
         {/* <!-- Work Experience Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
           {jobs.jobs.map((job: Job) => (
@@ -25,7 +25,6 @@ export const Experience: React.FC = () => {
 };
 const JobCard = (job: Job) => {
   const [showModal, setShowModal] = useState(false);
-  console.log(job);
   const handleClick = () => {
     setShowModal(!showModal);
   };
@@ -60,12 +59,16 @@ const JobCard = (job: Job) => {
           <p className="h-14 font-semibold text-blue-200">{job.positions[job.positions.length - 1].positionTitle}</p>
           <p className="text-gray-200">{`${formattedEmploymentStartDate} - ${formattedEmploymentEndDate}`}</p>
         </div>
-        <div className="absolute -right-3 -bottom-3 h-11 w-11 bg-papaya-400 rounded-full"></div>
-        <IconContext.Provider value={{ className: "text-blue-600 hover:text-blue-300 text-5xl" }}>
-          <button className="absolute -right-4 -bottom-4" onClick={handleClick}>
-            <Info />
-          </button>
-        </IconContext.Provider>
+        {job.responsibilities && (
+          <>
+            <div className="absolute -right-3 -bottom-3 h-11 w-11 bg-papaya-400 rounded-full"></div>
+            <IconContext.Provider value={{ className: "text-blue-600 hover:text-blue-300 text-5xl" }}>
+              <button className="absolute -right-4 -bottom-4" onClick={handleClick}>
+                <Info />
+              </button>
+            </IconContext.Provider>
+          </>
+        )}
         {showModal && <JobModal handleClick={handleClick} job={job} />}
       </div>
     </>

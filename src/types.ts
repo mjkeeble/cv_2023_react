@@ -16,3 +16,16 @@ export interface Job {
   positions: Position[];
   responsibilities?: string[];
 }
+
+export interface Qualification {
+  id: string;
+  title: string;
+  institute: string;
+  startDate: string;
+  endDate: string;
+  logo: string;
+  document?: string;
+  description?: string[];
+  flaggedText?: string[];
+  comment?: string
+}

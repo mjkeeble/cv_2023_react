@@ -19,7 +19,7 @@ export const About = () => {
               Coupled with my coding proficiency, I craft solutions that embody the utmost excellence in both design and
               functionality.
             </p>
-            <p className="bg-papaya text-left text-xl text-blue-300 my-2 p-4 font-semibold">
+            <p className="bg-papaya text-left text-xl text-blue-300 my-2 p-4 font-semibold rounded-lg">
               I'm available for employment in the Berlin area on an in-office or hybrid basis. If you think I'd be a
               good fit for your team, let's talk. <span className="font-bold text-peach-300">Contact me today!</span>
             </p>

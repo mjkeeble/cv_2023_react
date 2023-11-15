@@ -1,3 +1,4 @@
+import { Interweave } from "interweave";
 import { Job } from "../../types";
 
 interface ModalProps {
@@ -21,9 +22,9 @@ export const JobModal: React.FC<ModalProps> = ({ handleClick, job }) => {
   return (
     // {/* Blur layer */}
     <div className="fixed z-[200] inset-0 flex items-center justify-center">
-      <div className="absolute inset-0 bg-gray-500 bg-opacity-75 backdrop-blur-sm flex items-center justify-center">
+      <div className="absolute inset-0 bg-charcoal-900 bg-opacity-80 backdrop-blur-sm flex items-center justify-center">
         {/* Modal */}
-        <div className=" bg-white backdrop-opacity-100 shadow-gray-300 rounded-lg overflow-hidden shadow-xl max-w-screen-lg w-full m-4">
+        <div className=" bg-papaya-400 backdrop-opacity-100 shadow-gray-300 rounded-lg overflow-hidden shadow-xl max-w-screen-lg w-full max-h-[calc(100vh_*_0.8)] overflow-y-auto m-4">
           {/* image */}
           <div className={`relative bg-[url('/${job.picture}')]`}>
             <img
@@ -31,12 +32,18 @@ export const JobModal: React.FC<ModalProps> = ({ handleClick, job }) => {
               src={`/${job.picture}`}
               alt={`${job.companyName} image`}
             />
-            <p className="absolute bottom-0 right-1 text-white">{job.pictureSource}</p>
+            <Interweave
+              className="bg-gray-700 opacity-75 px-2 absolute bottom-0 right-0 "
+              content={job.pictureSource}
+            />
           </div>
+
           {/* Header section */}
-          <div className="m-4">
-            <h1 className="text-left">{job.companyShortName || job.companyName}</h1>
-            {job.companyCurrentName && <p className="text-left mb-5">(now {job.companyCurrentName})</p>}
+          <div className="m-4 mb-5">
+            <h1 className="text-left font-bold text-4xl lg:text-5xl">{job.companyShortName || job.companyName}</h1>
+            {job.companyCurrentName && <p className="text-left">(now {job.companyCurrentName})</p>}
+          </div>
+          <div className="mx-4 mb-5">
             {reverseSortedPositions.map((position) => (
               <div key={position.positionStartDate}>
                 <h2 className="text-left text-2xl font-semibold">
@@ -49,14 +56,20 @@ export const JobModal: React.FC<ModalProps> = ({ handleClick, job }) => {
                 </p>
               </div>
             ))}
-
-            {/* Responsibilities */}
-            {job.responsibilities && <List responsibilities={job.responsibilities} />}
           </div>
 
-          {/* Body section */}
+          {/* Responsibilities */}
+          {job.responsibilities && <List responsibilities={job.responsibilities} />}
 
-          <button onClick={handleClick}>Close</button>
+          {/* Button section */}
+          <div className="flex justify-center m-8">
+            <button
+              className="bg-blue-600 hover:bg-blue-700 text-papaya-400 font-bold py-2 px-4 rounded mx-8 shadow-lg shadow-blue-600"
+              onClick={handleClick}
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -65,8 +78,8 @@ export const JobModal: React.FC<ModalProps> = ({ handleClick, job }) => {
 
 const List: React.FC<ListProps> = ({ responsibilities }) => {
   return (
-    <div>
-      <div className="m-4">
+    <div className="flex justify-center">
+      <div className="m-4 max-w-2xl">
         <ul className="text-left">
           {responsibilities.map((responsibility: string) => (
             <li className="mx-2 px-4 py-2 list-disc" key={responsibility}>
