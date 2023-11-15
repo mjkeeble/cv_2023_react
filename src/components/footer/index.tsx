@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const Footer = () => {
   return (
     <footer id="Contact" className="relative bg-gray-800 flex justify-center p-8 max-w-full">
