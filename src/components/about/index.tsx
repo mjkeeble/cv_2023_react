@@ -25,7 +25,7 @@ export const About = () => {
             </p>
           </div>
           <img
-            src="/public/bewerbungsfoto.png"
+            src="/Bewerbungsfoto.png"
             className="h-96 rounded-tr-[5rem] rounded-bl-[5rem] border"
             alt="Portrait photograph"
           />
