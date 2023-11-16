@@ -28,7 +28,7 @@ export const JobModal: React.FC<ModalProps> = ({ handleClick, job }) => {
           {/* image */}
           <div className={`relative bg-[url('/${job.picture}')]`}>
             <img
-              className="max-h-[calc(100vh_/_4)] w-full object-cover object-bottom"
+              className="max-h-[calc(100vh_/_4)] w-full object-cover object-center"
               src={`/${job.picture}`}
               alt={`${job.companyName} image`}
             />
