@@ -1,6 +1,6 @@
 export const Hero: React.FC = () => {
   return (
-    <header className="relative w-full  h-full text-white grid grid-cols-1 lg:grid-cols-2">
+    <header className="relative w-full  h-full text-white grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1">
       <div className="h-[calc(100vh_/_2)] lg:h-screen flex flex-col justify-center pr-8 py-9 md:py-0 font-mjk">
         <h1 className="text-blue-600 text-center lg:text-right text-6xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl font-bold">
           Web Development
@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
         </h1>
       </div>
       <div className="bg-hero bg-center bg-cover h-[calc(100vh_/_2)] lg:h-screen "></div>
-      <p className="absolute bottom-2 right-3 text-white text-sm md:text-md">
+      <p className="absolute bottom-10 lg:bottom-20 right-5 text-white text-sm md:text-md">
         Image by{" "}
         <a
           href="https://www.freepik.com/free-photo/top-view-colorful-cogwheels-arrangement_25629310.htm"

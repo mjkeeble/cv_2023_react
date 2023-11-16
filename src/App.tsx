@@ -18,12 +18,12 @@ function App() {
         {/* <!-- Volunteering & Pastimes Section --> */}
         <section
           id="Pastimes"
-          className="hidden bg-white py-8 pt-20 pb-4 min-h-[calc(100vh_-_70px)] flex flex-col justify-center"
+          className="bg-papaya py-8 pt-20 pb-4 min-h-[calc(100vh_-_70px)] flex flex-col justify-center"
         >
           <div className="mx-auto">
             <h2 className="text-6xl mb-4 font-mjk">Volunteering & Pastimes</h2>
 
-            <p>Coming soon ...</p>
+            <p>Details coming soon ...</p>
           </div>
         </section>
 
