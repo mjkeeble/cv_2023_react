@@ -26,7 +26,7 @@ export const About = () => {
               </p>{" "}
               <a
                 className="text-xl md:text-2xl font-black text-papaya-400 hover:text-papaya-300"
-                href="mailto:abc@example.com"
+                href="mailto:mark@keeble.de"
               >
                 Contact me today!
               </a>
