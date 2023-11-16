@@ -22,7 +22,7 @@ export const QualificationModal: React.FC<ModalProps> = ({handleClick, qualifica
         {/* Modal */}
         <div className=" bg-papaya-400 backdrop-opacity-100 shadow-gray-300 rounded-lg overflow-hidden shadow-xl w-[800px] max-w-[calc(100vw_*_0.8)] max-h-[calc(100vh_*_0.9)] overflow-y-auto m-4">
           {/* image */}
-          <div className={`flex justify-center`}>
+          <div className="flex justify-center bg-papaya">
             <img
               className="h-96 max-h-[calc(100vh_/_4)] m-4"
               src={`/${qualification.logo}`}
@@ -32,10 +32,10 @@ export const QualificationModal: React.FC<ModalProps> = ({handleClick, qualifica
 
           {/* Header section */}
           <div className="m-4 mb-5">
-            <h1 className="text-left font-bold text-2xl sm:text-4xl lg:text-5xl">{qualification.institute}</h1>
+            <h1 className="text-left font-bold text-2xl sm:text-4xl lg:text-5xl">{qualification.title}</h1>
           </div>
           <div className="mx-4 mb-5">
-            <h2 className="text-left sm:text-2xl font-semibold">{qualification.title}</h2>
+            <h2 className="text-left sm:text-2xl font-semibold">{qualification.institute}</h2>
             <p className="text-left">
               {`${formatDate(qualification.startDate)} - ${
                 qualification.endDate ? formatDate(qualification.endDate) : "present"
