@@ -9,10 +9,10 @@ export const Experience: React.FC = () => {
   return (
     <section
       id="Experience"
-      className="bg-gray-800 py-8 pt-20 pb-4 min-h-[calc(100vh_-_70px)] flex flex-col justify-center"
+      className="bg-gray-800 py-8 pt-20 pb-4 min-h-screen flex flex-col justify-center"
     >
       <div className="mx-auto">
-        <h2 className="text-6xl font-semibold mb-4 font-mjk-bold">Professional Experience</h2>
+        <h2 className="text-5xl sm:text-6xl font-semibold my-4 font-mjk-bold">Professional Experience</h2>
         {/* <!-- Work Experience Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
           {jobs.jobs.map((job: Job) => (
@@ -46,7 +46,7 @@ const JobCard = (job: Job) => {
 
   return (
     <>
-      <div className="relative bg-papaya-400 p-4 rounded-lg shadow-md m-5 h-40 w-[400px]">
+      <div className="relative bg-papaya-400 p-4 rounded-lg shadow-md m-5 h-40 w-[400px] max-w-[calc(100vw_*_0.8)]">
         <div className="flex items-center flex-col mb-5 min-h-[58px] grow">
           <div className="h-14">
             <img

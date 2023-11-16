@@ -7,7 +7,6 @@ export const Navbar: React.FC = () => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => {
-    console.log(`clicked to ${!click}`);
     setClick(!click);
   };
 
@@ -39,14 +38,14 @@ export const Navbar: React.FC = () => {
               Professional Experience
             </li>
           </Link>
-          {/* <Link spy={true} smooth={true} to="Projects">
+          <Link spy={true} smooth={true} to="Projects">
                 <li
                   className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
                   onClick={handleClick}
                 >
                   Projects
                 </li>
-              </Link> */}
+              </Link>
           <Link spy={true} smooth={true} to="Education">
             <li
               className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
@@ -100,11 +99,11 @@ export const Navbar: React.FC = () => {
                   Experience
                 </li>
               </Link>
-              {/* <Link spy={true} smooth={true} to="Projects">
+              <Link spy={true} smooth={true} to="Projects">
                 <li className="text-blue-600 hover:text-blue-300 border-b-2 border-white hover:border-blue-300 transition cursor-pointer">
                   Projects
                 </li>
-              </Link> */}
+              </Link>
               <Link spy={true} smooth={true} to="Education">
                 <li className="text-blue-600 hover:text-blue-300 border-b-2 border-white hover:border-blue-300 transition cursor-pointer">
                   Education

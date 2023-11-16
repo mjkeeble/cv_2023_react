@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "id": "3",
+      "title": "30-Day Streak",
+      "type": "Habit-tracking app",
+      "technologies": "React | Sass | Bootstrap | JavaScript | NodeJS | ExpressJS | MongoDB",
+      "description": "Track and form new habits over 30 days!<br>Users can select or create challenges and prizes for successful progress.<br><br>Created with <a href='https://www.linkedin.com/in/annawaszak/'><u class='text-blue-600'<br>Ania Waszak</u></a> and <a href='https://www.linkedin.com/in/katie-gracey/'><u class='text-blue-600'> Katie Gracey</u></a>.",
+      "codeUrl": "https://github.com/30-day-streak/30-day-streak",
+      "image": "30-day-streak.png"
+    },
+    {
+      "id": "2",
+      "title": "Musician's website",
+      "type": "Concept for a musician's website with CMS",
+      "technologies": "HTML | CSS | JavaScript | NodeJS | ExpressJS | Handlebars | MongoDB",
+      "description": "Demo website incorporating a simple webshop, secure webmaster login and Content Management System using MongoDB.<br><br>Created with <a href='https://www.linkedin.com/in/william-campbell-ie/'><u class='text-blue-600'> William Campbell</u></a>.",
+      "codeUrl": "https://github.com/mjkeeble/Best_In_Blues",
+      "image": "janhirte.png"
+    },
+    {
+      "id": "1",
+      "title": "(Not so) Super-hero Memory",
+      "type": "Classic memory game with a twist",
+      "technologies": "HTML | CSS | p5.js | JavaScript",
+      "description": "Gather your team of (not so) super-heroes to save the world, but watch out!<br>They don't sit still for long and someone's left dangerous piles of kryptonite lying around!",
+      "siteUrl": "https://app.netlify.com/sites/kaleidoscopic-gaufre-7495cf/",
+      "codeUrl": "https://github.com/mjkeeble/memory-p5",
+      "image": "memory.png"
+    }
+  ]
+}

@@ -11,10 +11,21 @@ export interface Job {
   companyCurrentName?: string;
   companyLocation: string;
   companyLogo: string;
-  picture: string;
-  pictureSource: string;
+  picture?: string;
+  pictureSource?: string;
   positions: Position[];
   responsibilities?: string[];
+}
+
+export interface Project {
+  id: string;
+  title: string;
+  type: string;
+  technologies: string;
+  description: string;
+  siteUrl?: string;
+  codeUrl?: string;
+  image: string;
 }
 
 export interface Qualification {

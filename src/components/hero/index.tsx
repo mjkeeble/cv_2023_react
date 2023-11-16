@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
         </h1>
       </div>
       <div className="bg-hero bg-center bg-cover h-[calc(100vh_/_2)] lg:h-screen "></div>
-      <p className="absolute bottom-16 -right-10 -rotate-90 text-white">
+      <p className="absolute bottom-2 right-3 text-white text-sm md:text-md">
         Image by{" "}
         <a
           href="https://www.freepik.com/free-photo/top-view-colorful-cogwheels-arrangement_25629310.htm"

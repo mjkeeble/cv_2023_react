@@ -18,9 +18,9 @@ export const QualificationModal: React.FC<ModalProps> = ({handleClick, qualifica
   return (
     // {/* Blur layer */}
     <div className="fixed z-[200] inset-0 flex items-center justify-center">
-      <div className="absolute inset-0 bg-papaya-500 bg-opacity-80 backdrop-blur-sm flex items-center justify-center">
+      <div className="absolute inset-0 bg-charcoal-900 bg-opacity-80 backdrop-blur-sm flex items-center justify-center">
         {/* Modal */}
-        <div className=" bg-charcoal-800 backdrop-opacity-100 shadow-gray-300 rounded-lg overflow-hidden shadow-xl max-w-screen-lg w-full max-h-[calc(100vh_*_0.8)] overflow-y-auto m-4">
+        <div className=" bg-papaya-400 backdrop-opacity-100 shadow-gray-300 rounded-lg overflow-hidden shadow-xl w-[800px] max-w-[calc(100vw_*_0.8)] max-h-[calc(100vh_*_0.9)] overflow-y-auto m-4">
           {/* image */}
           <div className={`flex justify-center`}>
             <img
@@ -32,10 +32,10 @@ export const QualificationModal: React.FC<ModalProps> = ({handleClick, qualifica
 
           {/* Header section */}
           <div className="m-4 mb-5">
-            <h1 className="text-left font-bold text-4xl lg:text-5xl">{qualification.institute}</h1>
+            <h1 className="text-left font-bold text-2xl sm:text-4xl lg:text-5xl">{qualification.institute}</h1>
           </div>
           <div className="mx-4 mb-5">
-            <h2 className="text-left text-2xl font-semibold">{qualification.title}</h2>
+            <h2 className="text-left sm:text-2xl font-semibold">{qualification.title}</h2>
             <p className="text-left">
               {`${formatDate(qualification.startDate)} - ${
                 qualification.endDate ? formatDate(qualification.endDate) : "present"
@@ -49,7 +49,7 @@ export const QualificationModal: React.FC<ModalProps> = ({handleClick, qualifica
           {/* Button section */}
           <div className="flex justify-center m-8">
             <button
-              className="bg-papaya-300 hover:bg-papaya-400 text-charcoal-400 font-bold py-2 px-4 rounded mx-8 shadow-lg shadow-blue-600"
+              className="bg-blue-600 hover:bg-blue-300 text-papaya-400 font-bold py-2 px-4 rounded mx-8 shadow-lg shadow-blue-600"
               onClick={handleClick}
             >
               Close
