@@ -9,7 +9,7 @@ export const ProjectSection: React.FC = () => {
   return (
     <section
       id="Projects"
-      className="bg-papaya py-8 pt-20 pb-4 min-h-[calc(100vh_-_70px)] flex flex-col justify-center"
+      className="bg-papaya py-8 pt-20 pb-4 min-h-[calc(67vh)] min-h-[calc(67svh)] flex flex-col justify-center"
     >
       <div className="mx-auto">
         <h2 className="text-6xl font-semibold mb-4 font-mjk-bold">Projects</h2>

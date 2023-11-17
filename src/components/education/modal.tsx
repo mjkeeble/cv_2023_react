@@ -25,7 +25,7 @@ export const QualificationModal: React.FC<ModalProps> = ({handleClick, qualifica
           <div className="flex justify-center bg-papaya">
             <img
               className="h-96 max-h-[calc(100vh_/_4)] m-4"
-              src={`/${qualification.logo}`}
+              src={`/images/${qualification.logo}`}
               alt={`${qualification.institute} image`}
             />
           </div>

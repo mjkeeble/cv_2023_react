@@ -9,7 +9,7 @@ export const Education: React.FC = () => {
   return (
     <section
       id="Education"
-      className="bg-gray-800 py-8 pt-20 pb-4 min-h-[calc(100vh_-_70px)] flex flex-col justify-center"
+      className="bg-gray-800 py-8 pt-20 pb-4 min-h-[calc(67vh)] min-h-[calc(67svh)] flex flex-col justify-center"
     >
       <div className="mx-auto">
         <h2 className="text-6xl font-semibold mb-4 font-mjk-bold">Education and Training</h2>
@@ -42,7 +42,7 @@ const QualificationCard = (qualification: Qualification) => {
           <div className="h-14">
             <img
               className="max-w-[160px] max-h-[50px] self-center"
-              src={`/${qualification.logo}`}
+              src={`/images/${qualification.logo}`}
               alt={`${qualification.institute}  logo`}
             />
           </div>

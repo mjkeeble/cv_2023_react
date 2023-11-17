@@ -3,7 +3,7 @@ import { Project } from "../../types";
 import { FiMonitor } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 
-interface ModalProps {
+interface ModalProps {    
   handleClick: () => void;
   project: Project;
 }
@@ -16,10 +16,10 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
       <div className="absolute inset-0 bg-papaya-500 bg-opacity-80 backdrop-blur-sm flex items-center justify-center">
         {/* Modal */}
         <div className=" bg-charcoal-800 backdrop-opacity-100 shadow-gray-300 rounded-lg overflow-hidden text-blue-600 shadow-xl w-[calc(100vw_*_0.8)] max-w-[700px] max-h-[calc(100vh_*_0.9)] overflow-y-auto m-4">
-          <div className={`relative bg-[url('/${project.image}')]`}>
+          <div className={`relative bg-[url('/images/${project.image}')]`}>
             <img
               className="max-h-[calc(100vh_/_4)] w-full object-cover object-top"
-              src={`/${project.image}`}
+              src={`/images/${project.image}`}
               alt={`${project.title} screenshot`}
             />
           </div>

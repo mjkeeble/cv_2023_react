@@ -29,7 +29,7 @@ export const JobModal: React.FC<ModalProps> = ({ handleClick, job }) => {
           <div className={`relative bg-[url('/${job.picture}')]`}>
             <img
               className="max-h-[calc(100vh_/_4)] w-full object-cover object-center"
-              src={`/${job.picture}`}
+              src={`/images/${job.picture}`}
               alt={`${job.companyName} image`}
             />
             <Interweave

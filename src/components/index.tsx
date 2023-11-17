@@ -5,6 +5,7 @@ export * from "./footer";
 export * from "./hero";
 export * from "./navbar";
 export * from "./parallax";
+export * from "./pastimes";
 export * from "./projects";
 export * from "./typing";
 export * from "./work-experience";
