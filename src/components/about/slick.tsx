@@ -101,7 +101,7 @@ export default function SimpleSlider() {
           <h3 className="flex justify-center h-14 m-2">
             <img
               className="object-contain saturate-0 opacity-60 hover:opacity-100 hover:saturate-100"
-              src={`/public/carousel-logos/${logo.src}`}
+              src={`/images/${logo.src}`}
               alt={logo.alt}
             />
           </h3>
