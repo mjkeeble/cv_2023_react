@@ -12,10 +12,10 @@ const logos: Logo[] = [
     src: "html_css.png",
     alt: "HTML and CSS logos",
   },
-  {src: "react.png", alt: "React logo"},
-  {src: "tailwindcss.png", alt: "Tailwind CSS logo"},
-  {src: "blueprintjs.png", alt: "BlueprintJS logo"},
-  {src: "Bulma Logo.png", alt: "Bulma logo"},
+  { src: "react.png", alt: "React logo" },
+  { src: "tailwindcss.png", alt: "Tailwind CSS logo" },
+  { src: "blueprintjs.png", alt: "BlueprintJS logo" },
+  { src: "Bulma Logo.png", alt: "Bulma logo" },
   {
     src: "bootstrap.png",
     alt: "Bootstrap logo",
@@ -40,7 +40,7 @@ const logos: Logo[] = [
     src: "express.png",
     alt: "Express logo",
   },
-  { src: "REST_api.png", alt: "REST API"},
+  { src: "REST_api.png", alt: "REST API" },
   { src: "graphQL.png", alt: "GraphQL logo" },
   {
     src: "mongodb.png",
@@ -48,15 +48,16 @@ const logos: Logo[] = [
   },
   {
     src: "PostgreSQL.png",
-    alt: "PostgreSQL logo",  },
-    {
-      src: "sqlserver.png",
-      alt: "Microsoft SQL Server logo",
-    },
-    {
-      src: "git.png",
-      alt: "Git logo",
-    },
+    alt: "PostgreSQL logo",
+  },
+  {
+    src: "sqlserver.png",
+    alt: "Microsoft SQL Server logo",
+  },
+  {
+    src: "git.png",
+    alt: "Git logo",
+  },
 ];
 
 export default function SimpleSlider() {
@@ -68,28 +69,25 @@ export default function SimpleSlider() {
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0,
+    autoplaySpeed: 10,
     pauseOnHover: false,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToShow: 4,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToShow: 3,
         },
       },
       {
         breakpoint: 540,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],
@@ -98,13 +96,13 @@ export default function SimpleSlider() {
     <Slider {...settings} className="">
       {logos.map((logo) => (
         <div>
-          <h3 className="flex justify-center h-14 m-2">
+          <div className="flex justify-center align-center h-14 m-2">
             <img
-              className="object-contain saturate-0 opacity-60 hover:opacity-100 hover:saturate-100"
+              className="object-contain h-14 saturate-0 opacity-60 hover:opacity-100 hover:saturate-100"
               src={`/images/${logo.src}`}
               alt={logo.alt}
             />
-          </h3>
+          </div>
         </div>
       ))}
     </Slider>

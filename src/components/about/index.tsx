@@ -36,7 +36,7 @@ export const About = () => {
           </div>
           <img
             src="/images/Bewerbungsfoto.png"
-            className="h-96 rounded-tr-[5rem] rounded-bl-[5rem] border"
+            className="h-44 lg:h-96 rounded-tr-[2.5rem] rounded-bl-[2.5rem] lg:rounded-tr-[5rem] lg:rounded-bl-[5rem] border"
             alt="Portrait photograph"
           />
         </div>
