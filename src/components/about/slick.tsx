@@ -41,7 +41,7 @@ const logos: Logo[] = [
     alt: "Express logo",
   },
   { src: "REST_api.png", alt: "REST API"},
-  { src: "graphql.png", alt: "GraphQL logo" },
+  { src: "graphQL.png", alt: "GraphQL logo" },
   {
     src: "mongodb.png",
     alt: "MongoDB logo",
