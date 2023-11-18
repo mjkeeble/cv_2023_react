@@ -70,11 +70,11 @@ export default {
         parallax1:
           "linear-gradient(to right bottom, rgba(0, 135, 232,0.6), rgba(255, 196, 155, 0.6)), url('/images/homeOffice-s.png')",
         parallax2:
-          "linear-gradient(to right bottom, rgba(0, 135, 232,0.6), rgba(255, 196, 155, 0.6)), url('/images/vs-code-30-day-streak.png')",
+          "linear-gradient(to left top, rgba(0, 135, 232,0.6), rgba(255, 196, 155, 0.6)), url('/images/vs-code-30-day-streak.png')",
         parallax3:
-          "linear-gradient(to right bottom, rgba(0, 135, 232,0.6), rgba(255, 196, 155, 0.6)), url('/images/RF_rel_map.jpg')",
+          "linear-gradient(to right top, rgba(0, 135, 232,0.6), rgba(255, 196, 155, 0.6)), url('/images/RF_rel_map.jpg')",
         parallax4:
-          "linear-gradient(to right bottom, rgba(0, 135, 232,0.6), rgba(255, 196, 155, 0.6)), url('/images/010-Blues Jab-14. Juni 2023.jpg')",
+          "linear-gradient(to left bottom, rgba(0, 135, 232,0.6), rgba(255, 196, 155, 0.6)), url('/images/010-Blues Jab-14. Juni 2023.jpg')",
       },
       fontFamily: {
         "mjk-bold": ["Mjktitle2-bold", "sans-serif"],
