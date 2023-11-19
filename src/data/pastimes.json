@@ -1,5 +1,46 @@
 {
   "pastimes": [
-    { "title": "Boss", "organisation": "Boss", "startDate": "2015-01-01", "endDate": "2015-01-01", "image": "boss.jpg" }
+    {
+      "id": "1",
+      "title": "Chairperson, Kopernikus School Parents Association",
+      "dates": "2019 - present",
+      "images": [
+        {
+          "src": "foerderverein-cropped.png",
+          "alt": "Kopernikus School Parents Association"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Musician and songwriter",
+      "description": ["Guitarist and songwriter", "Singer, guitarist and songwriter in the band 'Blues Jab'"],
+      "images": [
+        {
+          "src": "blues-jab.png",
+          "alt": "Blues Jab"
+        },
+        {
+          "src": "blues-jab-mark-strahlwerk.jpg",
+          "alt": "Blues Jab"
+        },
+        {
+          "src": "blues-jab-band-strahlwerk.jpg",
+          "alt": "Blues Jab"
+        }
+      ],
+      "links": [
+        {
+          "icon": "soundcloud.png",
+          "description": "Hear my demos on SoundCloud",
+          "url": "https://soundcloud.com/markjkeeble?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+        },
+        {
+          "icon": "blues-jab.png",
+          "description": "Visit Blues Jab's website",
+          "url": "https://www.bluesjab.de/"
+        }
+      ]
+    }
   ]
 }

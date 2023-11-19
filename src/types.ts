@@ -33,10 +33,19 @@ export interface Qualification {
   title: string;
   institute: string;
   startDate: string;
-  endDate: string;
+  endDate?: string;
   logo: string;
   document?: string;
   description?: string[];
   flaggedText?: string[];
   comment?: string
+}
+
+export interface Pastime {
+  id: string;
+  title: string;
+  dates?: string;
+  description?: string[];
+  links?: {icon: string, description:string, url:string}[];
+  images: {src: string, alt: string}[];
 }
