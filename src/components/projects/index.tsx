@@ -9,15 +9,15 @@ export const ProjectSection: React.FC = () => {
   return (
     <section
       id="Projects"
-      className="bg-papaya py-8 pt-20 pb-4 min-h-[calc(67vh)] min-h-[calc(67svh)] flex flex-col justify-center"
+      className="bg-papaya py-20 min-h-[calc(67vh)] min-h-[calc(67svh)] flex flex-col justify-center"
     >
       <div className="mx-auto">
         <h2 className="text-6xl font-semibold mb-4 font-mjk-bold">Projects</h2>
 
         {/* <!-- Projects Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
-          {projects.projects.map((project: Project) => (
-            <ProjectCard {...project} key={project.id} />
+          {projects.projects.map((project: Project, index) => (
+            <ProjectCard {...project} key={index} />
           ))}
         </div>
       </div>

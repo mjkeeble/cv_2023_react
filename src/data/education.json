@@ -1,7 +1,6 @@
 {
   "qualifications": [
     {
-      "id": "4",
       "title": "Web Development Bootcamp",
       "institute": "Ironhack Berlin",
       "startDate": "2020-10-01",
@@ -18,7 +17,6 @@
       ]
     },
     {
-      "id": "3",
       "title": "Certified Database Developer in SQL Server",
       "institute": "Institut für Lernsysteme (ILS), Hamburg",
       "startDate": "2019-10-01",
@@ -39,7 +37,6 @@
       ]
     },
     {
-      "id": "2",
       "title": "Professional Certificate in Accounting",
       "institute": "The Open University, UK",
       "startDate": "2011-10-01",
@@ -49,7 +46,6 @@
       "comment": "Graduation certificate available on request"
     },
     {
-      "id":"1",
       "title": "BA(Hons) Banking, Insurance and Finance",
       "institute": "University College of North Wales, Bangor UK",
       "startDate": "1991-10-01",

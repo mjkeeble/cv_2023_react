@@ -9,14 +9,14 @@ export const Experience: React.FC = () => {
   return (
     <section
       id="Experience"
-      className="bg-gray-800 py-8 pt-20 pb-4 min-h-[calc(67vh)] min-h-[calc(67svh)] flex flex-col justify-center"
+      className="bg-gray-800 py-20 min-h-[calc(67vh)] min-h-[calc(67svh)] flex flex-col justify-center"
     >
       <div className="mx-auto">
         <h2 className="text-5xl sm:text-6xl font-semibold my-4 font-mjk-bold">Professional Experience</h2>
         {/* <!-- Work Experience Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
-          {jobs.jobs.map((job: Job) => (
-            <JobCard {...job} key={job.id} />
+          {jobs.jobs.map((job: Job, index) => (
+            <JobCard {...job} key={index} />
           ))}
         </div>
       </div>

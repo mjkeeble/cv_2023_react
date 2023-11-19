@@ -9,15 +9,15 @@ export const Pastimes: React.FC = () => {
   return (
     <section
       id="Pastimes"
-      className="bg-papaya py-8 pt-20 pb-4 min-h-[calc(67vh)] min-h-[calc(67svh)] flex flex-col justify-center"
+      className="bg-papaya py-20 min-h-[calc(67vh)] min-h-[calc(67svh)] flex flex-col justify-center"
     >
       <div className="mx-auto">
         <h2 className="text-6xl font-semibold mb-4 font-mjk-bold">Pastimes</h2>
 
         {/* <!-- Pastime Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
-          {pastimes.pastimes.map((pastime: Pastime) => (
-            <PastimeCard {...pastime} key={pastime.id} />
+          {pastimes.pastimes.map((pastime: Pastime, index) => (
+            <PastimeCard {...pastime} key={index} />
           ))}
         </div>
       </div>

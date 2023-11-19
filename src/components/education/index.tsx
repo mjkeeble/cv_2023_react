@@ -9,15 +9,15 @@ export const Education: React.FC = () => {
   return (
     <section
       id="Education"
-      className="bg-gray-800 py-8 pt-20 pb-4 min-h-[calc(67vh)] min-h-[calc(67svh)] flex flex-col justify-center"
+      className="bg-gray-800 py-20 min-h-[calc(67vh)] min-h-[calc(67svh)] flex flex-col justify-center"
     >
       <div className="mx-auto">
         <h2 className="text-6xl font-semibold mb-4 font-mjk-bold">Education and Training</h2>
 
         {/* <!-- Education Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
-          {education.qualifications.map((qualification: Qualification) => (
-            <QualificationCard {...qualification} key={qualification.id} />
+          {education.qualifications.map((qualification: Qualification, index) => (
+            <QualificationCard {...qualification} key={index} />
           ))}
         </div>
       </div>

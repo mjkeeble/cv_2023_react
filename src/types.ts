@@ -5,7 +5,6 @@ export interface Position {
 }
 
 export interface Job {
-  id: string;
   companyName: string;
   companyShortName?: string;
   companyCurrentName?: string;
@@ -18,7 +17,6 @@ export interface Job {
 }
 
 export interface Project {
-  id: string;
   title: string;
   type: string;
   technologies: string;
@@ -29,7 +27,6 @@ export interface Project {
 }
 
 export interface Qualification {
-  id: string;
   title: string;
   institute: string;
   startDate: string;
@@ -42,7 +39,6 @@ export interface Qualification {
 }
 
 export interface Pastime {
-  id: string;
   title: string;
   dates?: string;
   description?: string[];
