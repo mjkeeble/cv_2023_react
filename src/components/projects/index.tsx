@@ -1,11 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
 import { Project } from "../../types";
 import projects from "../../data/projects.json";
 import { ProjectModal } from "./modal";
 import { BsInfoCircleFill as Info } from "react-icons/bs";
-import {IconContext} from "react-icons";
+import { IconContext } from "react-icons";
+import "aos/dist/aos.css";
 
 export const ProjectSection: React.FC = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section
       id="Projects"
@@ -17,7 +23,9 @@ export const ProjectSection: React.FC = () => {
         {/* <!-- Projects Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
           {projects.projects.map((project: Project, index) => (
-            <ProjectCard {...project} key={index} />
+            <div data-aos="fade-up" data-aos-delay={200 * index}>
+              <ProjectCard {...project} key={index} />
+              </div>
           ))}
         </div>
       </div>

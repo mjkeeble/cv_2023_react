@@ -1,11 +1,18 @@
+import { useEffect } from "react";
+import AOS from "aos";
 import { BsInfoCircleFill as Info } from "react-icons/bs";
 import { IconContext } from "react-icons";
 import { useState } from "react";
 import { JobModal } from "./modal";
 import { Job } from "../../types";
 import jobs from "../../data/work-experience.json";
+import "aos/dist/aos.css";
 
 export const Experience: React.FC = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section
       id="Experience"
@@ -16,7 +23,9 @@ export const Experience: React.FC = () => {
         {/* <!-- Work Experience Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
           {jobs.jobs.map((job: Job, index) => (
-            <JobCard {...job} key={index} />
+            <div data-aos="fade-up" data-aos-delay={200 * index}>
+              <JobCard {...job} key={index} />
+            </div>
           ))}
         </div>
       </div>

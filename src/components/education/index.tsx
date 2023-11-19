@@ -1,11 +1,18 @@
-import { useState } from "react";
+import {useState, useEffect} from "react";
+import AOS from "aos";
 import { Qualification } from "../../types";
 import education from "../../data/education.json";
 import { QualificationModal } from "./modal";
 import { BsInfoCircleFill as Info } from "react-icons/bs";
-import { IconContext } from "react-icons";
+import {IconContext} from "react-icons";
+import "aos/dist/aos.css";
+
 
 export const Education: React.FC = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section
       id="Education"
@@ -17,7 +24,9 @@ export const Education: React.FC = () => {
         {/* <!-- Education Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
           {education.qualifications.map((qualification: Qualification, index) => (
-            <QualificationCard {...qualification} key={index} />
+            <div data-aos="fade-up" data-aos-delay={200 * index}>
+              <QualificationCard {...qualification} key={index} />
+              </div>
           ))}
         </div>
       </div>

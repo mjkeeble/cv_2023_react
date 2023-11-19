@@ -1,11 +1,18 @@
 import { useState } from "react";
+import { useEffect } from "react";
+import AOS from "aos";
 import { Pastime } from "../../types";
 import pastimes from "../../data/pastimes.json";
 import { PastimeModal } from "./modal";
 import { BsInfoCircleFill as Info } from "react-icons/bs";
 import { IconContext } from "react-icons";
+import "aos/dist/aos.css";
 
 export const Pastimes: React.FC = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section
       id="Pastimes"
@@ -17,7 +24,9 @@ export const Pastimes: React.FC = () => {
         {/* <!-- Pastime Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
           {pastimes.pastimes.map((pastime: Pastime, index) => (
-            <PastimeCard {...pastime} key={index} />
+            <div data-aos="fade-up" data-aos-delay={200 * index}>
+              <PastimeCard {...pastime} key={index} />
+            </div>
           ))}
         </div>
       </div>

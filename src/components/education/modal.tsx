@@ -9,8 +9,7 @@ interface ListProps {
   description: string[];
 }
 
-export const QualificationModal: React.FC<ModalProps> = ({handleClick, qualification}) => {
-  
+export const QualificationModal: React.FC<ModalProps> = ({ handleClick, qualification }) => {
   const formatDate = (date: string): string => {
     return new Date(date).toLocaleDateString("en-GB", { year: "numeric", month: "long" });
   };
