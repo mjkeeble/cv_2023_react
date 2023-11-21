@@ -43,7 +43,7 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
             <div className="flex justify-center">
               {project.siteUrl && (
                 <div className="flex flex-col items-center m-4">
-                  <a className="text-3xl text-blue-600 hover:text-blue-700" href={project.siteUrl}>
+                  <a className="text-4xl text-blue-600 hover:text-blue-700" href={project.siteUrl}>
                     <FiMonitor />
                   </a>
                   <p className="font-semibold">Visit the demo</p>
@@ -52,7 +52,7 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
 
               {project.codeUrl && (
                 <div className="flex flex-col items-center m-4">
-                  <a className="text-3xl text-blue-600 hover:text-blue-700" href={project.codeUrl}>
+                  <a className="text-4xl text-blue-600 hover:text-blue-700" href={project.codeUrl}>
                     <FaGithub />
                   </a>
                   <p className="font-semibold">Visit the code</p>

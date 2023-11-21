@@ -44,7 +44,7 @@ export const PastimeModal: React.FC<ModalProps> = ({ handleClick, pastime }) => 
                     className="flex flex-col items-center m-4 text-blue-600 hover:text-blue-700"
                     href={link.url}
                   >
-                    <img src={`/images/${link.icon}`} className="h-14" />
+                    <img src={`/images/${link.icon}`} className="h-9" />
                     <p className="max-w-[150px] mt-2">{link.description}</p>
                   </a>
                 ))}
