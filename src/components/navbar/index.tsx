@@ -17,7 +17,7 @@ export const Navbar: React.FC = () => {
         <ul className="text-center pt-4 text-[24px]">
           <Link spy={true} smooth={true} to="About">
             <li
-              className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
+              className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:text-blue-300 hover:rounded hover:font-semibold cursor-pointer"
               onClick={handleClick}
             >
               About
@@ -25,7 +25,7 @@ export const Navbar: React.FC = () => {
           </Link>
           <Link spy={true} smooth={true} to="Experience">
             <li
-              className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
+              className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:text-blue-300 hover:rounded hover:font-semibold cursor-pointer"
               onClick={handleClick}
             >
               Professional Experience
@@ -33,7 +33,7 @@ export const Navbar: React.FC = () => {
           </Link>
           <Link spy={true} smooth={true} to="Projects">
             <li
-              className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
+              className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:text-blue-300 hover:rounded hover:font-semibold cursor-pointer"
               onClick={handleClick}
             >
               Projects
@@ -41,7 +41,7 @@ export const Navbar: React.FC = () => {
           </Link>
           <Link spy={true} smooth={true} to="Education">
             <li
-              className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
+              className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:text-blue-300 hover:rounded hover:font-semibold cursor-pointer"
               onClick={handleClick}
             >
               Education
@@ -49,7 +49,7 @@ export const Navbar: React.FC = () => {
           </Link>
           <Link spy={true} smooth={true} to="Pastimes">
             <li
-              className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
+              className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:text-blue-300 hover:rounded hover:font-semibold cursor-pointer"
               onClick={handleClick}
             >
               Pastimes
@@ -57,25 +57,25 @@ export const Navbar: React.FC = () => {
           </Link>
           <Link spy={true} smooth={true} to="Contact">
             <li
-              className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
+              className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:text-blue-300 hover:rounded hover:font-semibold cursor-pointer"
               onClick={handleClick}
             >
               Contact
             </li>
           </Link>
 
-          <li className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer flex justify-center">
-            <a className="text-4xl mx-4 text-blue-600 hover:text-blue-300" href="https://github.com/mjkeeble">
+          <li className="py-4 text-4xl border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded  flex justify-center">
+            <a className="mx-4 text-blue-600 hover:text-blue-300 cursor-pointer" href="https://github.com/mjkeeble">
               <FaGithubSquare />
             </a>
             <a
-              className="text-4xl mx-4 text-blue-600 hover:text-blue-300"
+              className="mx-4 text-blue-600 hover:text-blue-300 cursor-pointer"
               href="https://www.linkedin.com/in/markjkeeble/"
             >
               <FaLinkedin />
             </a>
 
-            <a className="text-4xl mx-4 text-blue-600 hover:text-blue-300" href="mailto:mark@keeble.de">
+            <a className="mx-4 text-blue-600 hover:text-blue-300 cursor-pointer" href="mailto:mark@keeble.de">
               <MdEmail />
             </a>
           </li>
