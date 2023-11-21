@@ -1,4 +1,5 @@
-import { Interweave } from "interweave";
+import {Interweave} from "interweave";
+import {Zoom} from "react-awesome-reveal";
 import { Job } from "../../types";
 
 interface ModalProps {
@@ -24,6 +25,8 @@ export const JobModal: React.FC<ModalProps> = ({ handleClick, job }) => {
     <div className="fixed z-[200] inset-0 flex items-center justify-center">
       <div className="absolute inset-0 bg-charcoal-900 bg-opacity-80 backdrop-blur-sm flex items-center justify-center">
         {/* Modal */}
+        <Zoom duration={500}>
+
         <div className=" bg-papaya-400 backdrop-opacity-100 shadow-gray-300 text-blue-600 rounded-lg overflow-hidden shadow-xl w-[800px] max-w-[calc(100vw_*_0.8)] max-h-[calc(100vh_*_0.9)] overflow-y-auto m-4">
           {/* image */}
           <div className={`relative bg-[url('/${job.picture}')]`}>
@@ -72,7 +75,8 @@ export const JobModal: React.FC<ModalProps> = ({ handleClick, job }) => {
               Close
             </button>
           </div>
-        </div>
+          </div>
+        </Zoom>
       </div>
     </div>
   );

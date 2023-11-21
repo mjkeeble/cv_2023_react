@@ -4,8 +4,18 @@ import projects from "../../data/projects.json";
 import { ProjectModal } from "./modal";
 import { BsInfoCircleFill as Info } from "react-icons/bs";
 import {IconContext} from "react-icons";
+import {Fade} from "react-awesome-reveal";
+
+interface CardProps {
+  project: Project;
+  handleClick: (project: Project | null) => void;
+}
 
 export const ProjectSection: React.FC = () => {
+  const [modalContent, setModalContent] = useState<Project | null>(null);
+  const handleClick = (project: Project | null) => {
+    setModalContent(project);
+  };
   return (
     <section
       id="Projects"
@@ -16,20 +26,26 @@ export const ProjectSection: React.FC = () => {
 
         {/* <!-- Projects Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
-          {projects.projects.map((project: Project, index) => (
-            <ProjectCard {...project} key={index} />
-          ))}
+          <Fade cascade direction={"up"} duration={700}>
+            {projects.projects.map((project: Project, index) => (
+              <ProjectCard project={project} handleClick={handleClick} key={index} />
+            ))}
+          </Fade>
         </div>
       </div>
+      {modalContent && (
+        <ProjectModal
+          handleClick={() => {
+            handleClick(null);
+          }}
+          project={modalContent}
+        />
+      )}
     </section>
   );
 };
 
-const ProjectCard = (project: Project) => {
-  const [showModal, setShowModal] = useState(false);
-  const handleClick = () => {
-    setShowModal(!showModal);
-  };
+const ProjectCard:React.FC<CardProps> = ({project, handleClick}) => {
 
   return (
     <>
@@ -50,13 +66,12 @@ const ProjectCard = (project: Project) => {
           <>
             <div className="absolute -right-3 -bottom-3 h-10 w-10 bg-papaya-400 rounded-full"></div>
             <IconContext.Provider value={{ className: "text-blue-600 hover:text-blue-300 text-5xl" }}>
-              <button className="absolute -right-4 -bottom-4" onClick={handleClick}>
+              <button className="absolute -right-4 -bottom-4" onClick={() =>handleClick(project)}>
                 <Info />
               </button>
             </IconContext.Provider>
           </>
         )}
-        {showModal && <ProjectModal handleClick={handleClick} project={project} />}
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import SimpleSlider from "./slick";
+import { Zoom } from "react-awesome-reveal";
 
 export const About = () => {
   return (
@@ -21,18 +22,20 @@ export const About = () => {
               Coupled with my coding proficiency, I craft solutions that embody the utmost excellence in both design and
               functionality.
             </p>
-            <div className="rounded-full bg-blue-700 py-4 px-6 mt-5 max-w-[calc(100vw_*_0.95)]">
-              <p className="text-center text-xl md:text-2xl text-blue-300 px-4 lg:px-6 font-semibold rounded-lg">
-                I'm available for employment in the Berlin area on an in-office or hybrid basis. If you think I'd be a
-                good fit for your team, let's talk.
-              </p>{" "}
-              <a
-                className="text-xl md:text-2xl font-black text-papaya-400 hover:text-papaya-300"
-                href="mailto:mark@keeble.de"
-              >
-                Contact me today!
-              </a>
-            </div>
+            <Zoom fraction={1}>
+              <div className="rounded-full bg-blue-700 py-4 px-6 mt-5 max-w-[calc(100vw_*_0.95)]">
+                <p className="text-center text-xl md:text-2xl text-blue-300 px-4 lg:px-6 font-semibold rounded-lg">
+                  I'm available for employment in the Berlin area on an in-office or hybrid basis. If you think I'd be a
+                  good fit for your team, let's talk.
+                </p>{" "}
+                <a
+                  className="text-xl md:text-2xl font-black text-papaya-400 hover:text-papaya-300"
+                  href="mailto:mark@keeble.de"
+                >
+                  Contact me today!
+                </a>
+              </div>
+            </Zoom>
           </div>
           <img
             src="/images/Bewerbungsfoto.png"

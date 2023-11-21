@@ -4,8 +4,19 @@ import education from "../../data/education.json";
 import { QualificationModal } from "./modal";
 import { BsInfoCircleFill as Info } from "react-icons/bs";
 import { IconContext } from "react-icons";
+import { Fade } from "react-awesome-reveal";
+
+interface CardProps {
+  qualification: Qualification;
+  handleClick: (qualification: Qualification | null) => void;
+}
 
 export const Education: React.FC = () => {
+  const [modalContent, setModalContent] = useState<Qualification | null>(null);
+  const handleClick = (qualification: Qualification | null) => {
+    setModalContent(qualification);
+  };
+
   return (
     <section
       id="Education"
@@ -16,21 +27,26 @@ export const Education: React.FC = () => {
 
         {/* <!-- Education Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
-          {education.qualifications.map((qualification: Qualification, index) => (
-            <QualificationCard {...qualification} key={index} />
-          ))}
+          <Fade cascade direction={"up"} duration={700}>
+            {education.qualifications.map((qualification: Qualification, index) => (
+              <QualificationCard qualification={qualification} handleClick={handleClick} key={index} />
+            ))}
+          </Fade>
         </div>
       </div>
+      {modalContent && (
+        <QualificationModal
+          handleClick={() => {
+            handleClick(null);
+          }}
+          qualification={modalContent}
+        />
+      )}
     </section>
   );
 };
 
-const QualificationCard = (qualification: Qualification) => {
-  const [showModal, setShowModal] = useState(false);
-  const handleClick = () => {
-    setShowModal(!showModal);
-  };
-
+const QualificationCard: React.FC<CardProps> = ({ qualification, handleClick }) => {
   const formatDate = (date: string): string => {
     return new Date(date).toLocaleDateString("en-GB", { year: "numeric", month: "long" });
   };
@@ -56,13 +72,12 @@ const QualificationCard = (qualification: Qualification) => {
           <>
             <div className="absolute -right-3 -bottom-3 h-10 w-10 bg-papaya-400 rounded-full"></div>
             <IconContext.Provider value={{ className: "text-blue-600 hover:text-blue-300 text-5xl" }}>
-              <button className="absolute -right-4 -bottom-4" onClick={handleClick}>
+              <button className="absolute -right-4 -bottom-4" onClick={() => handleClick(qualification)}>
                 <Info />
               </button>
             </IconContext.Provider>
           </>
         )}
-        {showModal && <QualificationModal handleClick={handleClick} qualification={qualification} />}
       </div>
     </>
   );

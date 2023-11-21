@@ -1,11 +1,21 @@
+import { useState } from "react";
 import { BsInfoCircleFill as Info } from "react-icons/bs";
 import { IconContext } from "react-icons";
-import { useState } from "react";
+import { Fade } from "react-awesome-reveal";
 import { JobModal } from "./modal";
 import { Job } from "../../types";
 import jobs from "../../data/work-experience.json";
 
+interface CardProps {
+  job: Job;
+  handleClick: (job: Job | null) => void;
+}
 export const Experience: React.FC = () => {
+  const [modalContent, setModalContent] = useState<Job | null>(null);
+  const handleClick = (job: Job | null) => {
+    setModalContent(job);
+  };
+
   return (
     <section
       id="Experience"
@@ -15,20 +25,25 @@ export const Experience: React.FC = () => {
         <h2 className="text-5xl sm:text-6xl font-semibold my-4 font-mjk-bold">Professional Experience</h2>
         {/* <!-- Work Experience Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
-          {jobs.jobs.map((job: Job, index) => (
-            <JobCard {...job} key={index} />
-          ))}
+          <Fade cascade direction={"up"} duration={700}>
+            {jobs.jobs.map((job: Job, index) => (
+              <JobCard job={job} handleClick={handleClick} key={index} />
+            ))}
+          </Fade>
         </div>
       </div>
+      {modalContent && (
+        <JobModal
+          handleClick={() => {
+            handleClick(null);
+          }}
+          job={modalContent}
+        />
+      )}
     </section>
   );
 };
-const JobCard = (job: Job) => {
-  const [showModal, setShowModal] = useState(false);
-  const handleClick = () => {
-    setShowModal(!showModal);
-  };
-
+const JobCard: React.FC<CardProps> = ({ job, handleClick }) => {
   const sortedPositions = job.positions.sort(
     (a, b) => new Date(a.positionStartDate).getTime() - new Date(b.positionStartDate).getTime(),
   );
@@ -63,13 +78,12 @@ const JobCard = (job: Job) => {
           <>
             <div className="absolute -right-3 -bottom-3 h-10 w-10 bg-papaya-400 rounded-full"></div>
             <IconContext.Provider value={{ className: "text-blue-600 hover:text-blue-300 text-5xl" }}>
-              <button className="absolute -right-4 -bottom-4" onClick={handleClick}>
+              <button className="absolute -right-4 -bottom-4" onClick={() => handleClick(job)}>
                 <Info />
               </button>
             </IconContext.Provider>
           </>
         )}
-        {showModal && <JobModal handleClick={handleClick} job={job} />}
       </div>
     </>
   );

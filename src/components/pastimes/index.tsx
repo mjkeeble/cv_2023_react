@@ -4,8 +4,19 @@ import pastimes from "../../data/pastimes.json";
 import { PastimeModal } from "./modal";
 import { BsInfoCircleFill as Info } from "react-icons/bs";
 import { IconContext } from "react-icons";
+import { Fade } from "react-awesome-reveal";
+
+interface CardProps {
+  pastime: Pastime;
+  handleClick: (pastime: Pastime | null) => void;
+}
 
 export const Pastimes: React.FC = () => {
+  const [modalContent, setModalContent] = useState<Pastime | null>(null);
+  const handleClick = (pastime: Pastime | null) => {
+    setModalContent(pastime);
+  };
+
   return (
     <section
       id="Pastimes"
@@ -16,21 +27,26 @@ export const Pastimes: React.FC = () => {
 
         {/* <!-- Pastime Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
-          {pastimes.pastimes.map((pastime: Pastime, index) => (
-            <PastimeCard {...pastime} key={index} />
-          ))}
+          <Fade cascade direction={"up"} duration={700}>
+            {pastimes.pastimes.map((pastime: Pastime, index) => (
+              <PastimeCard pastime={pastime} handleClick={handleClick} key={index} />
+            ))}
+          </Fade>
         </div>
       </div>
+      {modalContent && (
+        <PastimeModal
+          handleClick={() => {
+            handleClick(null);
+          }}
+          pastime={modalContent}
+        />
+      )}
     </section>
   );
 };
 
-const PastimeCard = (pastime: Pastime) => {
-  const [showModal, setShowModal] = useState(false);
-  const handleClick = () => {
-    setShowModal(!showModal);
-  };
-
+const PastimeCard: React.FC<CardProps> = ({ pastime, handleClick }) => {
   return (
     <>
       <div className="relative bg-charcoal-800 p-4 rounded-lg shadow-md m-5 h-40 w-[400px] max-w-[calc(100vw_*_0.8)]">
@@ -50,13 +66,12 @@ const PastimeCard = (pastime: Pastime) => {
           <>
             <div className="absolute -right-3 -bottom-3 h-10 w-10 bg-papaya-400 rounded-full"></div>
             <IconContext.Provider value={{ className: "text-blue-600 hover:text-blue-300 text-5xl" }}>
-              <button className="absolute -right-4 -bottom-4" onClick={handleClick}>
+              <button className="absolute -right-4 -bottom-4" onClick={() => handleClick(pastime)}>
                 <Info />
               </button>
             </IconContext.Provider>
           </>
         )}
-        {showModal && <PastimeModal handleClick={handleClick} pastime={pastime} />}
       </div>
     </>
   );
