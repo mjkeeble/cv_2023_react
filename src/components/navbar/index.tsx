@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { IconContext } from "react-icons";
-import { FaTimes, FaBars } from "react-icons/fa";
+import { FaBars, FaTimes, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export const Navbar: React.FC = () => {
   const [click, setClick] = useState(false);
@@ -31,13 +32,13 @@ export const Navbar: React.FC = () => {
             </li>
           </Link>
           <Link spy={true} smooth={true} to="Projects">
-                <li
-                  className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
-                  onClick={handleClick}
-                >
-                  Projects
-                </li>
-              </Link>
+            <li
+              className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
+              onClick={handleClick}
+            >
+              Projects
+            </li>
+          </Link>
           <Link spy={true} smooth={true} to="Education">
             <li
               className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer"
@@ -62,6 +63,22 @@ export const Navbar: React.FC = () => {
               Contact
             </li>
           </Link>
+
+          <li className="py-4 text-blue-600 border-b border-charcoal-800 hover:bg-charcoal-800 hover:rounded cursor-pointer flex justify-center">
+            <a className="text-4xl mx-4 text-blue-600 hover:text-blue-300" href="https://github.com/mjkeeble">
+              <FaGithubSquare />
+            </a>
+            <a
+              className="text-4xl mx-4 text-blue-600 hover:text-blue-300"
+              href="https://www.linkedin.com/in/markjkeeble/"
+            >
+              <FaLinkedin />
+            </a>
+
+            <a className="text-4xl mx-4 text-blue-600 hover:text-blue-300" href="mailto:mark@keeble.de">
+              <MdEmail />
+            </a>
+          </li>
         </ul>
       </div>
     </>
@@ -71,13 +88,13 @@ export const Navbar: React.FC = () => {
     <nav className="sticky top-0 bg-white z-[100]">
       <div className="h-10vh flex justify-between z-50 text-blue-600 px-5 py-4">
         <div className="flex items-center flex-1">
-        <Link spy={true} smooth={true} to="Home">
-          <img className="h-9" src="/mjk_logo_cv.svg" alt="" />
+          <Link spy={true} smooth={true} to="Home">
+            <img className="h-9" src="/mjk_logo_cv.svg" alt="" />
           </Link>
         </div>
         <div className="lg:flex lg:flex-1 items-center justify-end font-normal hidden">
           <div className="flex-10">
-            <ul className="flex gap-8 mr-16 text-[24px]">
+            <ul className="flex gap-8 mr-2 text-[24px]">
               <Link spy={true} smooth={true} to="About">
                 <li className="text-blue-600 hover:text-blue-300 border-b-2 border-white hover:border-blue-300 transition cursor-pointer">
                   About
@@ -108,6 +125,21 @@ export const Navbar: React.FC = () => {
                   Contact
                 </li>
               </Link>
+              <li className="flex">
+                <a className="text-3xl px-1 text-blue-600 hover:text-blue-300" href="https://github.com/mjkeeble">
+                  <FaGithubSquare />
+                </a>
+                <a
+                  className="text-3xl px-1 text-blue-600 hover:text-blue-300"
+                  href="https://www.linkedin.com/in/markjkeeble/"
+                >
+                  <FaLinkedin />
+                </a>
+
+                <a className="text-3xl px-1 text-blue-600 hover:text-blue-300" href="mailto:mark@keeble.de">
+                  <MdEmail />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
