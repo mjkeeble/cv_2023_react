@@ -20,25 +20,28 @@ const texts = [
   "fun!",
 ];
 interface TypewritingRenderArgs {
-    currentText: string
-    fullCurrentText: string
+  currentText: string;
+  fullCurrentText: string;
 }
 
 export const TypingEffect: React.FC = () => {
-
   return (
     <div>
-
-      <Typewriting strings={texts} writeSpeedMs={250} waitBeforeDeleteMs={2000} deleteSpeedMs={0} >
-        {({currentText, fullCurrentText}: TypewritingRenderArgs) => (
-          <h1 className="mt-24 ml-4 text-left text-xl pb-2"> Web development is <br />
-            <span className=" text-peach-300 font-mjk text-3xl pb-0
-        6" aria-label={fullCurrentText}>
+      <Typewriting strings={texts} writeSpeedMs={250} waitBeforeDeleteMs={2000} deleteSpeedMs={0}>
+        {({ currentText, fullCurrentText }: TypewritingRenderArgs) => (
+          <h1 className="ml-4 mt-24 pb-2 text-left text-xl">
+            {" "}
+            Web development is <br />
+            <span
+              className=" 6 pb-0 font-mjk text-3xl
+        text-peach-300"
+              aria-label={fullCurrentText}
+            >
               &zwnj;{currentText}
             </span>
           </h1>
         )}
-        </Typewriting>
+      </Typewriting>
     </div>
   );
 };

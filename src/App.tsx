@@ -4,8 +4,8 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="bg-gray-400 flex justify-center">
-      <div id="Home" className="bg-white font-sans flex flex-col  w-screen max-w-[1400px] m-0 p-0">
+    <div className="flex justify-center bg-gray-400">
+      <div id="Home" className="m-0 flex w-screen max-w-[1400px]  flex-col bg-white p-0 font-sans">
         <Colors />
         <Hero />
         <Navbar />

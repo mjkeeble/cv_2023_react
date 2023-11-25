@@ -17,15 +17,15 @@ export const QualificationModal: React.FC<ModalProps> = ({ handleClick, qualific
 
   return (
     // {/* Blur layer */}
-    <div className="fixed z-[200] inset-0 flex items-center justify-center">
-      <div className="absolute inset-0 bg-charcoal-900 bg-opacity-80 backdrop-blur-sm flex items-center justify-center">
+    <div className="fixed inset-0 z-[200] flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center bg-charcoal-900 bg-opacity-80 backdrop-blur-sm">
         {/* Modal */}
         <Zoom duration={500}>
-          <div className=" bg-papaya-400 backdrop-opacity-100 shadow-gray-300 rounded-lg overflow-hidden shadow-xl w-[800px] max-w-[calc(100vw_*_0.8)] max-h-[calc(100vh_*_0.9)] overflow-y-auto m-4">
+          <div className=" m-4 max-h-[calc(100vh_*_0.9)] w-[800px] max-w-[calc(100vw_*_0.8)] overflow-hidden overflow-y-auto rounded-lg bg-papaya-400 shadow-xl shadow-gray-300 backdrop-opacity-100">
             {/* image */}
             <div className="flex justify-center bg-papaya">
               <img
-                className="h-96 max-h-[calc(100vh_/_4)] m-4"
+                className="m-4 h-96 max-h-[calc(100vh_/_4)]"
                 src={`/images/${qualification.logo}`}
                 alt={`${qualification.institute} image`}
               />
@@ -33,10 +33,10 @@ export const QualificationModal: React.FC<ModalProps> = ({ handleClick, qualific
 
             {/* Header section */}
             <div className="m-4 mb-5">
-              <h1 className="text-left font-bold text-2xl sm:text-4xl lg:text-5xl">{qualification.title}</h1>
+              <h1 className="text-left text-2xl font-bold sm:text-4xl lg:text-5xl">{qualification.title}</h1>
             </div>
             <div className="mx-4 mb-5">
-              <h2 className="text-left sm:text-2xl font-semibold">{qualification.institute}</h2>
+              <h2 className="text-left font-semibold sm:text-2xl">{qualification.institute}</h2>
               <p className="text-left">
                 {`${formatDate(qualification.startDate)} - ${
                   qualification.endDate ? formatDate(qualification.endDate) : "present"
@@ -48,9 +48,9 @@ export const QualificationModal: React.FC<ModalProps> = ({ handleClick, qualific
             {qualification.description && <List description={qualification.description} />}
 
             {/* Button section */}
-            <div className="flex justify-center m-8">
+            <div className="m-8 flex justify-center">
               <button
-                className="bg-blue-600 hover:bg-blue-300 text-papaya-400 font-bold py-2 px-4 rounded mx-8 shadow-lg shadow-blue-600"
+                className="mx-8 rounded bg-blue-600 px-4 py-2 font-bold text-papaya-400 shadow-lg shadow-blue-600 hover:bg-blue-300"
                 onClick={handleClick}
               >
                 Close
@@ -69,7 +69,7 @@ const List: React.FC<ListProps> = ({ description }) => {
       <div className="m-4 max-w-2xl">
         <ul className="text-left">
           {description.map((item: string, index) => (
-            <li className="mx-2 px-4 py-2 list-disc" key={index}>
+            <li className="mx-2 list-disc px-4 py-2" key={index}>
               {item}
             </li>
           ))}

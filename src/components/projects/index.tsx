@@ -3,8 +3,8 @@ import { Project } from "../../types";
 import projects from "../../data/projects.json";
 import { ProjectModal } from "./modal";
 import { BsInfoCircleFill as Info } from "react-icons/bs";
-import {IconContext} from "react-icons";
-import {Fade} from "react-awesome-reveal";
+import { IconContext } from "react-icons";
+import { Fade } from "react-awesome-reveal";
 
 interface CardProps {
   project: Project;
@@ -19,10 +19,10 @@ export const ProjectSection: React.FC = () => {
   return (
     <section
       id="Projects"
-      className="bg-papaya py-20 min-h-[calc(67vh)] min-h-[calc(67svh)] flex flex-col justify-center"
+      className="flex min-h-[calc(67svh)] min-h-[calc(67vh)] flex-col justify-center bg-papaya py-20"
     >
       <div className="mx-auto">
-        <h2 className="text-6xl font-semibold mb-4 font-mjk-bold">Projects</h2>
+        <h2 className="mb-4 font-mjk-bold text-6xl font-semibold">Projects</h2>
 
         {/* <!-- Projects Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
@@ -45,12 +45,11 @@ export const ProjectSection: React.FC = () => {
   );
 };
 
-const ProjectCard:React.FC<CardProps> = ({project, handleClick}) => {
-
+const ProjectCard: React.FC<CardProps> = ({ project, handleClick }) => {
   return (
     <>
-      <div className="relative bg-charcoal-800 p-4 rounded-lg shadow-md m-5 h-40 w-[400px] max-w-[calc(100vw_*_0.8)]">
-        <div className="flex items-center flex-col mb-5 min-h-[58px] grow">
+      <div className="relative m-5 h-40 w-[400px] max-w-[calc(100vw_*_0.8)] rounded-lg bg-charcoal-800 p-4 shadow-md">
+        <div className="mb-5 flex min-h-[58px] grow flex-col items-center">
           {/* <div className="h-14">
             <img
               className="max-w-[160px] max-h-[50px] self-center"
@@ -64,9 +63,9 @@ const ProjectCard:React.FC<CardProps> = ({project, handleClick}) => {
         </div>
         {project.description && (
           <>
-            <div className="absolute -right-3 -bottom-3 h-10 w-10 bg-papaya-400 rounded-full"></div>
+            <div className="absolute -bottom-3 -right-3 h-10 w-10 rounded-full bg-papaya-400"></div>
             <IconContext.Provider value={{ className: "text-blue-600 hover:text-blue-300 text-5xl" }}>
-              <button className="absolute -right-4 -bottom-4" onClick={() =>handleClick(project)}>
+              <button className="absolute -bottom-4 -right-4" onClick={() => handleClick(project)}>
                 <Info />
               </button>
             </IconContext.Provider>

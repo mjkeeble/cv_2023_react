@@ -13,11 +13,11 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
   console.log("🚀 => project:", project);
   return (
     // {/* Blur layer */}
-    <div className="fixed z-[200] inset-0 flex items-center justify-center">
-      <div className="absolute inset-0 bg-papaya-500 bg-opacity-80 backdrop-blur-sm flex items-center justify-center">
+    <div className="fixed inset-0 z-[200] flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center bg-papaya-500 bg-opacity-80 backdrop-blur-sm">
         {/* Modal */}
         <Zoom duration={500}>
-          <div className=" bg-charcoal-800 backdrop-opacity-100 shadow-gray-300 rounded-lg overflow-hidden text-blue-600 shadow-xl w-[calc(100vw_*_0.8)] max-w-[700px] max-h-[calc(100vh_*_0.9)] overflow-y-auto m-4">
+          <div className=" m-4 max-h-[calc(100vh_*_0.9)] w-[calc(100vw_*_0.8)] max-w-[700px] overflow-hidden overflow-y-auto rounded-lg bg-charcoal-800 text-blue-600 shadow-xl shadow-gray-300 backdrop-opacity-100">
             <div className={`relative bg-[url('/images/${project.image}')]`}>
               <img
                 className="max-h-[calc(100vh_/_4)] w-full object-cover object-top"
@@ -28,10 +28,10 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
 
             {/* Header section */}
             <div className="m-4 mb-5">
-              <h1 className="font-bold text-2xl sm:text-4xl lg:text-5xl">{project.title}</h1>
+              <h1 className="text-2xl font-bold sm:text-4xl lg:text-5xl">{project.title}</h1>
             </div>
             <div className="mx-4 mb-5">
-              <h2 className="sm:text-2xl font-semibold">{project.type}</h2>
+              <h2 className="font-semibold sm:text-2xl">{project.type}</h2>
             </div>
 
             {/* Description */}
@@ -42,7 +42,7 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
             {/* Links */}
             <div className="flex justify-center">
               {project.siteUrl && (
-                <div className="flex flex-col items-center m-4">
+                <div className="m-4 flex flex-col items-center">
                   <a className="text-4xl text-blue-600 hover:text-blue-700" href={project.siteUrl}>
                     <FiMonitor />
                   </a>
@@ -51,7 +51,7 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
               )}
 
               {project.codeUrl && (
-                <div className="flex flex-col items-center m-4">
+                <div className="m-4 flex flex-col items-center">
                   <a className="text-4xl text-blue-600 hover:text-blue-700" href={project.codeUrl}>
                     <FaGithub />
                   </a>
@@ -61,9 +61,9 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
             </div>
 
             {/* Button section */}
-            <div className="flex justify-center m-8">
+            <div className="m-8 flex justify-center">
               <button
-                className="bg-papaya-300 hover:bg-papaya-400 text-charcoal-400 font-bold py-2 px-4 rounded mx-8 shadow-lg shadow-blue-600"
+                className="mx-8 rounded bg-papaya-300 px-4 py-2 font-bold text-charcoal-400 shadow-lg shadow-blue-600 hover:bg-papaya-400"
                 onClick={handleClick}
               >
                 Close
