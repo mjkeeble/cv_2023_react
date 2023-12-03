@@ -101,7 +101,7 @@ export default function SimpleSlider() {
         <div key={index}>
           <div className="flex justify-center align-center h-14 m-2">
             <img
-              className="object-contain h-14 saturate-0 opacity-60 hover:opacity-100 hover:saturate-100"
+              className="object-contain h-14"
               src={`/images/${logo.src}`}
               alt={logo.alt}
             />
