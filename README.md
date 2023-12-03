@@ -1,6 +1,6 @@
 # Vite React/ TypeScript starter project
 
-### Date of creation: 9 Novenmer 2023
+### Date of creation: 9 November 2023
 
 This project is a preconfigured starting point for creating a React project with TypeScript with TailwindCSS, eslint and prettier preconfigured. 
 
