@@ -36,14 +36,20 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
 
             {/* Description */}
             <div className="m-4 md:m-8">
-              <Interweave className="text-md md:text-md whitespace-normal" content={project.description} />
+              <Interweave
+                className="text-md md:text-md whitespace-normal"
+                content={project.description}
+              />
             </div>
 
             {/* Links */}
             <div className="flex justify-center">
               {project.siteUrl && (
                 <div className="m-4 flex flex-col items-center">
-                  <a className="text-4xl text-blue-600 hover:text-blue-700" href={project.siteUrl}>
+                  <a
+                    className="text-4xl text-blue-600 hover:text-blue-700"
+                    href={project.siteUrl}
+                  >
                     <FiMonitor />
                   </a>
                   <p className="font-semibold">Visit the demo</p>
@@ -52,7 +58,10 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
 
               {project.codeUrl && (
                 <div className="m-4 flex flex-col items-center">
-                  <a className="text-4xl text-blue-600 hover:text-blue-700" href={project.codeUrl}>
+                  <a
+                    className="text-4xl text-blue-600 hover:text-blue-700"
+                    href={project.codeUrl}
+                  >
                     <FaGithub />
                   </a>
                   <p className="font-semibold">Visit the code</p>
