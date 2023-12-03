@@ -15,7 +15,11 @@ export const Navbar: React.FC = () => {
     <>
       <div className="absolute left-0 right-0 top-14 block w-full bg-white transition lg:hidden ">
         <ul className="pt-4 text-center text-[24px]">
-          <Link spy={true} smooth={true} to="About">
+          <Link
+            spy={true}
+            smooth={true}
+            to="About"
+          >
             <li
               className="cursor-pointer border-b border-charcoal-800 py-4 text-blue-600 hover:rounded hover:bg-charcoal-800 hover:font-semibold hover:text-blue-300"
               onClick={handleClick}
@@ -23,7 +27,11 @@ export const Navbar: React.FC = () => {
               About
             </li>
           </Link>
-          <Link spy={true} smooth={true} to="Experience">
+          <Link
+            spy={true}
+            smooth={true}
+            to="Experience"
+          >
             <li
               className="cursor-pointer border-b border-charcoal-800 py-4 text-blue-600 hover:rounded hover:bg-charcoal-800 hover:font-semibold hover:text-blue-300"
               onClick={handleClick}
@@ -31,7 +39,11 @@ export const Navbar: React.FC = () => {
               Professional Experience
             </li>
           </Link>
-          <Link spy={true} smooth={true} to="Projects">
+          <Link
+            spy={true}
+            smooth={true}
+            to="Projects"
+          >
             <li
               className="cursor-pointer border-b border-charcoal-800 py-4 text-blue-600 hover:rounded hover:bg-charcoal-800 hover:font-semibold hover:text-blue-300"
               onClick={handleClick}
@@ -39,7 +51,11 @@ export const Navbar: React.FC = () => {
               Projects
             </li>
           </Link>
-          <Link spy={true} smooth={true} to="Education">
+          <Link
+            spy={true}
+            smooth={true}
+            to="Education"
+          >
             <li
               className="cursor-pointer border-b border-charcoal-800 py-4 text-blue-600 hover:rounded hover:bg-charcoal-800 hover:font-semibold hover:text-blue-300"
               onClick={handleClick}
@@ -47,7 +63,11 @@ export const Navbar: React.FC = () => {
               Education
             </li>
           </Link>
-          <Link spy={true} smooth={true} to="Pastimes">
+          <Link
+            spy={true}
+            smooth={true}
+            to="Pastimes"
+          >
             <li
               className="cursor-pointer border-b border-charcoal-800 py-4 text-blue-600 hover:rounded hover:bg-charcoal-800 hover:font-semibold hover:text-blue-300"
               onClick={handleClick}
@@ -55,7 +75,11 @@ export const Navbar: React.FC = () => {
               Pastimes
             </li>
           </Link>
-          <Link spy={true} smooth={true} to="Contact">
+          <Link
+            spy={true}
+            smooth={true}
+            to="Contact"
+          >
             <li
               className="cursor-pointer border-b border-charcoal-800 py-4 text-blue-600 hover:rounded hover:bg-charcoal-800 hover:font-semibold hover:text-blue-300"
               onClick={handleClick}
@@ -65,7 +89,10 @@ export const Navbar: React.FC = () => {
           </Link>
 
           <li className="flex justify-center border-b border-charcoal-800 py-4 text-4xl  hover:rounded hover:bg-charcoal-800">
-            <a className="mx-4 cursor-pointer text-blue-600 hover:text-blue-300" href="https://github.com/mjkeeble">
+            <a
+              className="mx-4 cursor-pointer text-blue-600 hover:text-blue-300"
+              href="https://github.com/mjkeeble"
+            >
               <FaGithubSquare />
             </a>
             <a
@@ -75,7 +102,10 @@ export const Navbar: React.FC = () => {
               <FaLinkedin />
             </a>
 
-            <a className="mx-4 cursor-pointer text-blue-600 hover:text-blue-300" href="mailto:mark@keeble.de">
+            <a
+              className="mx-4 cursor-pointer text-blue-600 hover:text-blue-300"
+              href="mailto:mark@keeble.de"
+            >
               <MdEmail />
             </a>
           </li>
@@ -88,55 +118,95 @@ export const Navbar: React.FC = () => {
     <nav className="sticky top-0 z-[100] bg-white">
       <div className="h-10vh z-50 flex justify-between px-5 py-4 text-blue-600">
         <div className="flex flex-1 items-center">
-          <Link spy={true} smooth={true} to="Home">
-            <img className="h-9" src="/mjk_logo_cv.svg" alt="" />
+          <Link
+            spy={true}
+            smooth={true}
+            to="Home"
+          >
+            <img
+              className="h-9"
+              src="/mjk_logo_cv.svg"
+              alt=""
+            />
           </Link>
         </div>
         <div className="hidden items-center justify-end font-normal lg:flex lg:flex-1">
           <div className="flex-10">
             <ul className="mr-2 flex gap-8 text-[24px]">
-              <Link spy={true} smooth={true} to="About">
+              <Link
+                spy={true}
+                smooth={true}
+                to="About"
+              >
                 <li className="cursor-pointer border-b-2 border-white text-blue-600 transition hover:border-blue-300 hover:text-blue-300">
                   About
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="Experience">
+              <Link
+                spy={true}
+                smooth={true}
+                to="Experience"
+              >
                 <li className="cursor-pointer border-b-2 border-white text-blue-600 transition hover:border-blue-300 hover:text-blue-300">
                   Experience
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="Projects">
+              <Link
+                spy={true}
+                smooth={true}
+                to="Projects"
+              >
                 <li className="cursor-pointer border-b-2 border-white text-blue-600 transition hover:border-blue-300 hover:text-blue-300">
                   Projects
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="Education">
+              <Link
+                spy={true}
+                smooth={true}
+                to="Education"
+              >
                 <li className="cursor-pointer border-b-2 border-white text-blue-600 transition hover:border-blue-300 hover:text-blue-300">
                   Education
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="Pastimes" onClick={handleClick}>
+              <Link
+                spy={true}
+                smooth={true}
+                to="Pastimes"
+                onClick={handleClick}
+              >
                 <li className="cursor-pointer border-b-2 border-white text-blue-600 transition hover:border-blue-300 hover:text-blue-300">
                   Pastimes
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="Contact" onClick={handleClick}>
+              <Link
+                spy={true}
+                smooth={true}
+                to="Contact"
+                onClick={handleClick}
+              >
                 <li className="cursor-pointer border-b-2 border-white text-blue-600 transition hover:border-blue-300 hover:text-blue-300">
                   Contact
                 </li>
               </Link>
               <li className="flex">
-                <a className="px-1 text-3xl text-blue-600 hover:text-blue-300" href="https://github.com/mjkeeble">
+                <a
+                  className="cursor-pointer border-b-2 border-white px-1 text-3xl text-blue-600 transition hover:border-blue-300 hover:text-blue-300"
+                  href="https://github.com/mjkeeble"
+                >
                   <FaGithubSquare />
                 </a>
                 <a
-                  className="px-1 text-3xl text-blue-600 hover:text-blue-300"
+                  className="cursor-pointer border-b-2 border-white px-1 text-3xl text-blue-600 transition hover:border-blue-300 hover:text-blue-300"
                   href="https://www.linkedin.com/in/markjkeeble/"
                 >
                   <FaLinkedin />
                 </a>
 
-                <a className="px-1 text-3xl text-blue-600 hover:text-blue-300" href="mailto:mark@keeble.de">
+                <a
+                  className="cursor-pointer border-b-2 border-white px-1 text-3xl text-blue-600 transition hover:border-blue-300 hover:text-blue-300"
+                  href="mailto:mark@keeble.de"
+                >
                   <MdEmail />
                 </a>
               </li>
@@ -145,7 +215,10 @@ export const Navbar: React.FC = () => {
         </div>
         <div>{click && content}</div>
         <IconContext.Provider value={{ className: "text-blue-600 hover:text-blue-300 text-3xl" }}>
-          <button className="block pr-4 transition lg:hidden " onClick={handleClick}>
+          <button
+            className="block pr-4 transition lg:hidden "
+            onClick={handleClick}
+          >
             {click ? <FaTimes /> : <FaBars />}
           </button>
         </IconContext.Provider>

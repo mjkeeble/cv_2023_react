@@ -4,7 +4,10 @@ export const Hero: React.FC = () => {
   return (
     <header className="grid  h-[100svh] h-[100vh] w-full grid-cols-1 grid-rows-2 text-white lg:grid-cols-2 lg:grid-rows-1">
       <div className="flex h-[calc(100svh/2)] flex-col justify-center font-mjk lg:h-screen lg:py-9 lg:pr-8">
-        <Fade cascade duration={1000}>
+        <Fade
+          cascade
+          duration={1000}
+        >
           <h1 className="text-center text-4xl font-bold text-blue-600 min-[445px]:text-6xl sm:text-7xl md:text-8xl lg:text-right lg:text-8xl xl:text-9xl">
             Web Development
           </h1>
@@ -21,16 +24,17 @@ export const Hero: React.FC = () => {
           Context
         </Fade>
       </div>
-      <div className="relative h-[calc(100svh/2)] bg-hero bg-cover bg-center lg:h-screen"></div>
-      <p className="md:text-md absolute bottom-4 right-5 text-sm text-white lg:bottom-4 lg:right-6">
-        Image by{" "}
-        <a
-          href="https://www.freepik.com/free-photo/top-view-colorful-cogwheels-arrangement_25629310.htm"
-          className="text-white"
-        >
-          Freepik
-        </a>
-      </p>
+      <div className="relative h-[calc(100svh/2)] bg-hero bg-cover bg-center lg:h-screen">
+        <p className="md:text-md absolute bottom-4 right-5 text-sm text-white">
+          Image by{" "}
+          <a
+            href="https://www.freepik.com/free-photo/top-view-colorful-cogwheels-arrangement_25629310.htm"
+            className="text-white"
+          >
+            Freepik
+          </a>
+        </p>
+      </div>
     </header>
   );
 };
