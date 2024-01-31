@@ -24,6 +24,14 @@
       "siteUrl": "https://app.netlify.com/sites/kaleidoscopic-gaufre-7495cf/",
       "codeUrl": "https://github.com/mjkeeble/memory-p5",
       "image": "memory.png"
+    },
+    {
+      "title": "Blues Jab",
+      "type": "Band website",
+      "technologies": "HTML | tailwindcss | TypeScript | React | ",
+      "description": "Basic website for my band.",
+      "siteUrl": "https://musical-selkie-e7110f.netlify.app/",
+      "image": "blues-jab.png"
     }
   ]
 }

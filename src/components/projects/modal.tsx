@@ -19,7 +19,7 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
           <div className=" m-4 max-h-[calc(100vh_*_0.9)] w-[calc(100vw_*_0.8)] max-w-[700px] overflow-hidden overflow-y-auto rounded-lg bg-charcoal-800 text-blue-600 shadow-xl shadow-gray-300 backdrop-opacity-100">
             <div className={`relative bg-[url('/images/${project.image}')]`}>
               <img
-                className="max-h-[calc(100vh_/_4)] w-full object-cover object-top"
+                className="max-h-[calc(100vh_/_4)] w-full object-fit p-2 object-top"
                 src={`/images/${project.image}`}
                 alt={`${project.title} screenshot`}
               />
@@ -51,7 +51,7 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
                   >
                     <FiMonitor />
                   </a>
-                  <p className="font-semibold">Visit the demo</p>
+                  <p className="font-semibold">Visit the site</p>
                 </div>
               )}
 
