@@ -1,6 +1,6 @@
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 interface Image {
   src: string;
@@ -22,15 +22,22 @@ export const SimpleSlider: React.FC<SliderProps> = ({ images }) => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    pauseOnHover: false,
+    pauseOnHover: false
   };
 
   return (
-    <Slider {...settings} className="">
+    <Slider
+      {...settings}
+      className=""
+    >
       {images.map((image, index) => (
         <div key={index}>
           <div className="align-center flex h-80 max-h-[calc(98vh_/_4)] justify-center">
-            <img className="h-full object-contain p-2" src={`/images/${image.src}`} alt={image.alt} />
+            <img
+              className="h-full object-contain p-2"
+              src={`/images/${image.src}`}
+              alt={image.alt}
+            />
           </div>
         </div>
       ))}

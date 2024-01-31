@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
 import { IconContext } from "react-icons";
-import { FaBars, FaTimes, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaBars, FaGithubSquare, FaLinkedin, FaTimes } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-scroll";
 
 export const Navbar: React.FC = () => {
   const [click, setClick] = useState(false);

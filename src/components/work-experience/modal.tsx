@@ -17,7 +17,7 @@ export const JobModal: React.FC<ModalProps> = ({ handleClick, job }) => {
   };
 
   const reverseSortedPositions = job.positions.sort(
-    (a, b) => new Date(b.positionStartDate).getTime() - new Date(a.positionStartDate).getTime(),
+    (a, b) => new Date(b.positionStartDate).getTime() - new Date(a.positionStartDate).getTime()
   );
 
   return (
@@ -87,7 +87,10 @@ const List: React.FC<ListProps> = ({ responsibilities }) => {
       <div className="m-4 max-w-2xl pl-4">
         <ul className="text-left">
           {responsibilities.map((responsibility: string) => (
-            <li className="mx-2 list-disc px-4 py-2" key={responsibility}>
+            <li
+              className="mx-2 list-disc px-4 py-2"
+              key={responsibility}
+            >
               {responsibility}
             </li>
           ))}

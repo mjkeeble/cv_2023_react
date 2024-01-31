@@ -12,7 +12,6 @@ interface ListProps {
 }
 
 export const PastimeModal: React.FC<ModalProps> = ({ handleClick, pastime }) => {
-  console.log("🚀 => pastime:", pastime.links);
   return (
     // {/* Blur layer */}
     <div className="fixed inset-0 z-[200] flex items-center justify-center">
@@ -44,7 +43,10 @@ export const PastimeModal: React.FC<ModalProps> = ({ handleClick, pastime }) => 
                     className="m-4 flex flex-col items-center text-blue-600 hover:text-blue-700"
                     href={link.url}
                   >
-                    <img src={`/images/${link.icon}`} className="h-9" />
+                    <img
+                      src={`/images/${link.icon}`}
+                      className="h-9"
+                    />
                     <p className="mt-2 max-w-[150px]">{link.description}</p>
                   </a>
                 ))}
@@ -73,7 +75,10 @@ const List: React.FC<ListProps> = ({ description }) => {
       <div className="m-4 max-w-2xl">
         <ul className="text-left">
           {description.map((item: string) => (
-            <li className="mx-2 list-disc px-4 py-2" key={item}>
+            <li
+              className="mx-2 list-disc px-4 py-2"
+              key={item}
+            >
               {item}
             </li>
           ))}

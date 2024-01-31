@@ -17,7 +17,7 @@ const texts = [
   "learning.",
   "agile.",
   "accepting the challenge.",
-  "fun!",
+  "fun!"
 ];
 interface TypewritingRenderArgs {
   currentText: string;
@@ -27,7 +27,12 @@ interface TypewritingRenderArgs {
 export const TypingEffect: React.FC = () => {
   return (
     <div>
-      <Typewriting strings={texts} writeSpeedMs={250} waitBeforeDeleteMs={2000} deleteSpeedMs={0}>
+      <Typewriting
+        strings={texts}
+        writeSpeedMs={250}
+        waitBeforeDeleteMs={2000}
+        deleteSpeedMs={0}
+      >
         {({ currentText, fullCurrentText }: TypewritingRenderArgs) => (
           <h1 className="ml-4 mt-24 pb-2 text-left text-xl">
             {" "}

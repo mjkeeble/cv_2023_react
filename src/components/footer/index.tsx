@@ -16,7 +16,7 @@ export const Footer = () => {
         </Zoom>
       </div>
       <div>
-        <p className="px-3 pb-3 text-papaya">© Mark J. Keeble, 2023</p>
+        <p className="px-3 pb-3 text-papaya">© Mark J. Keeble, 2023 - {new Date().getFullYear()}</p>
       </div>
     </footer>
   );

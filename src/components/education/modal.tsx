@@ -69,7 +69,10 @@ const List: React.FC<ListProps> = ({ description }) => {
       <div className="m-4 max-w-2xl">
         <ul className="text-left">
           {description.map((item: string, index) => (
-            <li className="mx-2 list-disc px-4 py-2" key={index}>
+            <li
+              className="mx-2 list-disc px-4 py-2"
+              key={index}
+            >
               {item}
             </li>
           ))}

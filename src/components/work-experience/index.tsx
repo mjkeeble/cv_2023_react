@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { BsInfoCircleFill as Info } from "react-icons/bs";
-import { IconContext } from "react-icons";
 import { Fade } from "react-awesome-reveal";
-import { JobModal } from "./modal";
-import { Job } from "../../types";
+import { IconContext } from "react-icons";
+import { BsInfoCircleFill as Info } from "react-icons/bs";
 import jobs from "../../data/work-experience.json";
+import { Job } from "../../types";
+import { JobModal } from "./modal";
 
 interface CardProps {
   job: Job;
@@ -19,15 +19,23 @@ export const Experience: React.FC = () => {
   return (
     <section
       id="Experience"
-      className="flex min-h-[calc(67svh)] min-h-[calc(67vh)] flex-col justify-center bg-gray-800 py-20"
+      className="flex min-h-[calc(67svh)] flex-col justify-center bg-gray-800 py-20"
     >
       <div className="mx-auto">
         <h2 className="my-4 font-mjk-bold text-5xl font-semibold sm:text-6xl">Professional Experience</h2>
         {/* <!-- Work Experience Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
-          <Fade cascade direction={"up"} duration={700}>
+          <Fade
+            cascade
+            direction={"up"}
+            duration={700}
+          >
             {jobs.jobs.map((job: Job, index) => (
-              <JobCard job={job} handleClick={handleClick} key={index} />
+              <JobCard
+                job={job}
+                handleClick={handleClick}
+                key={index}
+              />
             ))}
           </Fade>
         </div>
@@ -45,7 +53,7 @@ export const Experience: React.FC = () => {
 };
 const JobCard: React.FC<CardProps> = ({ job, handleClick }) => {
   const sortedPositions = job.positions.sort(
-    (a, b) => new Date(a.positionStartDate).getTime() - new Date(b.positionStartDate).getTime(),
+    (a, b) => new Date(a.positionStartDate).getTime() - new Date(b.positionStartDate).getTime()
   );
 
   const formatDate = (date: string): string => {
@@ -78,7 +86,10 @@ const JobCard: React.FC<CardProps> = ({ job, handleClick }) => {
           <>
             <div className="absolute -bottom-3 -right-3 h-10 w-10 rounded-full bg-papaya-400"></div>
             <IconContext.Provider value={{ className: "text-blue-600 hover:text-blue-300 text-5xl" }}>
-              <button className="absolute -bottom-4 -right-4" onClick={() => handleClick(job)}>
+              <button
+                className="absolute -bottom-4 -right-4"
+                onClick={() => handleClick(job)}
+              >
                 <Info />
               </button>
             </IconContext.Provider>

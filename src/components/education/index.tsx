@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Qualification } from "../../types";
-import education from "../../data/education.json";
-import { QualificationModal } from "./modal";
-import { BsInfoCircleFill as Info } from "react-icons/bs";
-import { IconContext } from "react-icons";
 import { Fade } from "react-awesome-reveal";
+import { IconContext } from "react-icons";
+import { BsInfoCircleFill as Info } from "react-icons/bs";
+import education from "../../data/education.json";
+import { Qualification } from "../../types";
+import { QualificationModal } from "./modal";
 
 interface CardProps {
   qualification: Qualification;
@@ -20,16 +20,24 @@ export const Education: React.FC = () => {
   return (
     <section
       id="Education"
-      className="flex min-h-[calc(67svh)] min-h-[calc(67vh)] flex-col justify-center bg-gray-800 py-20"
+      className="flex min-h-[calc(67svh)] flex-col justify-center bg-gray-800 py-20"
     >
       <div className="mx-auto">
         <h2 className="mb-4 font-mjk-bold text-6xl font-semibold">Education and Training</h2>
 
         {/* <!-- Education Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
-          <Fade cascade direction={"up"} duration={700}>
+          <Fade
+            cascade
+            direction={"up"}
+            duration={700}
+          >
             {education.qualifications.map((qualification: Qualification, index) => (
-              <QualificationCard qualification={qualification} handleClick={handleClick} key={index} />
+              <QualificationCard
+                qualification={qualification}
+                handleClick={handleClick}
+                key={index}
+              />
             ))}
           </Fade>
         </div>
@@ -72,7 +80,10 @@ const QualificationCard: React.FC<CardProps> = ({ qualification, handleClick }) 
           <>
             <div className="absolute -bottom-3 -right-3 h-10 w-10 rounded-full bg-papaya-400"></div>
             <IconContext.Provider value={{ className: "text-blue-600 hover:text-blue-300 text-5xl" }}>
-              <button className="absolute -bottom-4 -right-4" onClick={() => handleClick(qualification)}>
+              <button
+                className="absolute -bottom-4 -right-4"
+                onClick={() => handleClick(qualification)}
+              >
                 <Info />
               </button>
             </IconContext.Provider>

@@ -2,7 +2,7 @@ import { Fade } from "react-awesome-reveal";
 
 export const Hero: React.FC = () => {
   return (
-    <header className="grid  h-[100svh] h-[100vh] w-full grid-cols-1 grid-rows-2 text-white lg:grid-cols-2 lg:grid-rows-1">
+    <header className="grid  h-[100svh] w-full grid-cols-1 grid-rows-2 text-white lg:grid-cols-2 lg:grid-rows-1">
       <div className="flex h-[calc(100svh/2)] flex-col justify-center font-mjk lg:h-screen lg:py-9 lg:pr-8">
         <Fade
           cascade

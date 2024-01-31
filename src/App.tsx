@@ -1,11 +1,14 @@
-import { About, Hero, Education, Experience, Footer, Navbar, Parallax, Pastimes, ProjectSection } from "./components";
-import { Colors } from "./components/colors";
 import "./App.css";
+import { About, Education, Experience, Footer, Hero, Navbar, Parallax, Pastimes, ProjectSection } from "./components";
+import { Colors } from "./components/colors";
 
 function App() {
   return (
     <div className="flex justify-center bg-gray-400">
-      <div id="Home" className="m-0 flex w-screen max-w-[1400px]  flex-col bg-white p-0 font-sans">
+      <div
+        id="Home"
+        className="m-0 flex w-screen max-w-[1400px]  flex-col bg-white p-0 font-sans"
+      >
         <Colors />
         <Hero />
         <Navbar />

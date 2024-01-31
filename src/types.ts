@@ -35,13 +35,13 @@ export interface Qualification {
   document?: string;
   description?: string[];
   flaggedText?: string[];
-  comment?: string
+  comment?: string;
 }
 
 export interface Pastime {
   title: string;
   dates?: string;
   description?: string[];
-  links?: {icon: string, description:string, url:string}[];
-  images: {src: string, alt: string}[];
+  links?: { icon: string; description: string; url: string }[];
+  images: { src: string; alt: string }[];
 }

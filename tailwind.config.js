@@ -14,7 +14,7 @@ export default {
           600: "#00518b",
           700: "#0087e8",
           800: "#45b2ff",
-          900: "#a2d8ff",
+          900: "#a2d8ff"
         },
         charcoal: {
           DEFAULT: "#294c60",
@@ -26,7 +26,7 @@ export default {
           600: "#407595",
           700: "#639bbc",
           800: "#97bcd2",
-          900: "#cbdee9",
+          900: "#cbdee9"
         },
         gray: {
           DEFAULT: "#adb6c4",
@@ -38,7 +38,7 @@ export default {
           600: "#bdc4cf",
           700: "#cdd3db",
           800: "#dee1e7",
-          900: "#eef0f3",
+          900: "#eef0f3"
         },
         papaya: {
           DEFAULT: "#ffefd3",
@@ -50,7 +50,7 @@ export default {
           600: "#fff2da",
           700: "#fff5e3",
           800: "#fff8ed",
-          900: "#fffcf6",
+          900: "#fffcf6"
         },
         peach: {
           DEFAULT: "#ffc49b",
@@ -62,8 +62,8 @@ export default {
           600: "#ffcfad",
           700: "#ffdbc2",
           800: "#ffe7d6",
-          900: "#fff3eb",
-        },
+          900: "#fff3eb"
+        }
       },
       backgroundImage: {
         hero: "url('/images/top-view-colorful-cogwheels-arrangement.jpg')",
@@ -74,14 +74,14 @@ export default {
         parallax3:
           "linear-gradient(to right top, rgba(0, 135, 232,0.6), rgba(255, 196, 155, 0.6)), url('/images/RF_rel_map.jpg')",
         parallax4:
-          "linear-gradient(to left bottom, rgba(0, 135, 232,0.6), rgba(255, 196, 155, 0.6)), url('/images/010-Blues Jab-14. Juni 2023.jpg')",
+          "linear-gradient(to left bottom, rgba(0, 135, 232,0.6), rgba(255, 196, 155, 0.6)), url('/images/010-Blues Jab-14. Juni 2023.jpg')"
       },
       fontFamily: {
         "mjk-bold": ["Mjktitle2-bold", "sans-serif"],
-        mjk: ["Mjktitles", "sans-serif"],
-      },
-    },
+        mjk: ["Mjktitles", "sans-serif"]
+      }
+    }
   },
   variants: {},
-  plugins: [],
+  plugins: []
 };

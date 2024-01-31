@@ -1,8 +1,8 @@
-import { Zoom } from "react-awesome-reveal";
 import { Interweave } from "interweave";
-import { Project } from "../../types";
-import { FiMonitor } from "react-icons/fi";
+import { Zoom } from "react-awesome-reveal";
 import { FaGithub } from "react-icons/fa";
+import { FiMonitor } from "react-icons/fi";
+import { Project } from "../../types";
 
 interface ModalProps {
   handleClick: () => void;
@@ -10,7 +10,6 @@ interface ModalProps {
 }
 
 export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => {
-  console.log("🚀 => project:", project);
   return (
     // {/* Blur layer */}
     <div className="fixed inset-0 z-[200] flex items-center justify-center">

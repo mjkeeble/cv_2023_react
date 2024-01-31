@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Pastime } from "../../types";
-import pastimes from "../../data/pastimes.json";
-import { PastimeModal } from "./modal";
-import { BsInfoCircleFill as Info } from "react-icons/bs";
-import { IconContext } from "react-icons";
 import { Fade } from "react-awesome-reveal";
+import { IconContext } from "react-icons";
+import { BsInfoCircleFill as Info } from "react-icons/bs";
+import pastimes from "../../data/pastimes.json";
+import { Pastime } from "../../types";
+import { PastimeModal } from "./modal";
 
 interface CardProps {
   pastime: Pastime;
@@ -20,16 +20,24 @@ export const Pastimes: React.FC = () => {
   return (
     <section
       id="Pastimes"
-      className="flex min-h-[calc(67svh)] min-h-[calc(67vh)] flex-col justify-center bg-papaya py-20"
+      className="flex min-h-[calc(67svh)] flex-col justify-center bg-papaya py-20"
     >
       <div className="mx-auto">
         <h2 className="mb-4 font-mjk-bold text-6xl font-semibold">Pastimes</h2>
 
         {/* <!-- Pastime Cards --> */}
         <div className="flex flex-row flex-wrap justify-center">
-          <Fade cascade direction={"up"} duration={700}>
+          <Fade
+            cascade
+            direction={"up"}
+            duration={700}
+          >
             {pastimes.pastimes.map((pastime: Pastime, index) => (
-              <PastimeCard pastime={pastime} handleClick={handleClick} key={index} />
+              <PastimeCard
+                pastime={pastime}
+                handleClick={handleClick}
+                key={index}
+              />
             ))}
           </Fade>
         </div>
@@ -66,7 +74,10 @@ const PastimeCard: React.FC<CardProps> = ({ pastime, handleClick }) => {
           <>
             <div className="absolute -bottom-3 -right-3 h-10 w-10 rounded-full bg-papaya-400"></div>
             <IconContext.Provider value={{ className: "text-blue-600 hover:text-blue-300 text-5xl" }}>
-              <button className="absolute -bottom-4 -right-4" onClick={() => handleClick(pastime)}>
+              <button
+                className="absolute -bottom-4 -right-4"
+                onClick={() => handleClick(pastime)}
+              >
                 <Info />
               </button>
             </IconContext.Provider>
