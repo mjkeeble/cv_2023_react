@@ -69,7 +69,7 @@ const ProjectCard: React.FC<CardProps> = ({ project, handleClick }) => {
           <p className="h-14 font-semibold text-blue-200">{project.title}</p>
           <p className="text-gray-200">{project.type}</p>
         </div>
-        {project.description && (
+        {(project.siteUrl || project.codeUrl) && (
           <>
             <div className="absolute -bottom-3 -right-3 h-10 w-10 rounded-full bg-papaya-400"></div>
             <IconContext.Provider value={{ className: "text-blue-600 hover:text-blue-300 text-5xl" }}>

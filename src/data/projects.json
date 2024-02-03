@@ -29,8 +29,7 @@
       "title": "Blues Jab",
       "type": "Band website",
       "technologies": "HTML | tailwindcss | TypeScript | React | ",
-      "description": "Basic website for my band.",
-      "siteUrl": "https://musical-selkie-e7110f.netlify.app/",
+      "siteUrl": "https://www.bluesjab.de/",
       "image": "blues-jab.png"
     }
   ]

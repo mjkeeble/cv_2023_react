@@ -19,7 +19,7 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
           <div className=" m-4 max-h-[calc(100vh_*_0.9)] w-[calc(100vw_*_0.8)] max-w-[700px] overflow-hidden overflow-y-auto rounded-lg bg-charcoal-800 text-blue-600 shadow-xl shadow-gray-300 backdrop-opacity-100">
             <div className={`relative bg-[url('/images/${project.image}')]`}>
               <img
-                className="max-h-[calc(100vh_/_4)] w-full object-fit p-2 object-top"
+                className="max-h-[calc(100vh_/_4)] w-full object-contain object-top p-2"
                 src={`/images/${project.image}`}
                 alt={`${project.title} screenshot`}
               />
@@ -46,24 +46,24 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
               {project.siteUrl && (
                 <div className="m-4 flex flex-col items-center">
                   <a
-                    className="text-4xl text-blue-600 hover:text-blue-700"
+                    className="text-blue-600 hover:text-blue-700"
                     href={project.siteUrl}
                   >
-                    <FiMonitor />
+                    <FiMonitor className="mx-auto text-4xl"/>
+                    <p className="text-md text-center font-semibold">Visit the site</p>
                   </a>
-                  <p className="font-semibold">Visit the site</p>
                 </div>
               )}
 
               {project.codeUrl && (
                 <div className="m-4 flex flex-col items-center">
                   <a
-                    className="text-4xl text-blue-600 hover:text-blue-700"
+                    className="text-blue-600 hover:text-blue-700"
                     href={project.codeUrl}
                   >
-                    <FaGithub />
+                    <FaGithub className="mx-auto text-4xl"/>
+                    <p className="text-md text-center font-semibold">Visit the code</p>
                   </a>
-                  <p className="font-semibold">Visit the code</p>
                 </div>
               )}
             </div>
