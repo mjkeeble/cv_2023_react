@@ -20,7 +20,7 @@ export interface Project {
   title: string;
   type: string;
   technologies: string;
-  description: string;
+  description?: string;
   siteUrl?: string;
   codeUrl?: string;
   image: string;
