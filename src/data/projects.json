@@ -21,7 +21,7 @@
       "type": "Classic memory game with a twist",
       "technologies": "HTML | CSS | p5.js | JavaScript",
       "description": "Gather your team of (not so) super-heroes to save the world, but watch out!<br>They don't sit still for long and someone's left dangerous piles of kryptonite lying around - pick a pair and you're toast!!",
-      "siteUrl": "https://app.netlify.com/sites/kaleidoscopic-gaufre-7495cf/",
+      "siteUrl": "https://kaleidoscopic-gaufre-7495cf.netlify.app/",
       "codeUrl": "https://github.com/mjkeeble/memory-p5",
       "image": "memory.png"
     },
