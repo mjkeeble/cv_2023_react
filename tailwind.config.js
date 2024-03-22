@@ -70,7 +70,7 @@ export default {
         parallax1:
           "linear-gradient(to right bottom, rgba(0, 135, 232,0.6), rgba(255, 196, 155, 0.6)), url('/images/homeOffice-s.png')",
         parallax2:
-          "linear-gradient(to left top, rgba(0, 135, 232,0.6), rgba(255, 196, 155, 0.6)), url('/images/vs-code-30-day-streak.png')",
+          "linear-gradient(to left top, rgba(0, 135, 232,0.6), rgba(255, 196, 155, 0.6)), url('/images/songPrompter-vscode.png')",
         parallax3:
           "linear-gradient(to right top, rgba(0, 135, 232,0.6), rgba(255, 196, 155, 0.6)), url('/images/RF_rel_map.jpg')",
         parallax4:
