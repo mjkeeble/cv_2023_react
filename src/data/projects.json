@@ -1,6 +1,23 @@
 {
   "projects": [
     {
+      "title": "songPrompter",
+      "type": "Teleprompter app for gigging musicians",
+      "technologies": "React | TypeScript | tailwindcss | Vite | Arduino",
+      "description": "Concieved as a DIY alternative to products like the <a href='https://www.stageprompter.co.uk/'>Stageprompter</a>, <strong>songPrompter</strong> is a stand-alone floor monitor that can be used to display lyrics and chords, song structures or presentation notes, all easily controlled by footswitch for a relaxed and confident stage experience for performers everywhere.",
+      "codeUrl": "https://github.com/mjkeeble/songPrompter",
+      "image": "songPrompter_logo_transparent.png"
+    },
+    {
+      "title": "bluesjab.de",
+      "type": "Band website",
+      "technologies": "React | TypeScript | tailwindcss | Vite | i18next",
+      "description": "Website for my my band, Blues Jab",
+      "siteUrl": "https://www.bluesjab.de/",
+      "codeUrl": "https://github.com/mjkeeble/blues_jab_v1",
+      "image": "blues-jab-website.png"
+    },
+    {
       "title": "30-Day Streak",
       "type": "Habit-tracking app",
       "technologies": "React | Sass | Bootstrap | JavaScript | NodeJS | ExpressJS | MongoDB",
@@ -24,13 +41,6 @@
       "siteUrl": "https://kaleidoscopic-gaufre-7495cf.netlify.app/",
       "codeUrl": "https://github.com/mjkeeble/memory-p5",
       "image": "memory.png"
-    },
-    {
-      "title": "Blues Jab",
-      "type": "Band website",
-      "technologies": "HTML | tailwindcss | TypeScript | React | ",
-      "siteUrl": "https://www.bluesjab.de/",
-      "image": "blues-jab.png"
     }
   ]
 }

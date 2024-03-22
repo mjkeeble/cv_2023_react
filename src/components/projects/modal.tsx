@@ -31,6 +31,7 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
             </div>
             <div className="mx-4 mb-5">
               <h2 className="font-semibold sm:text-2xl">{project.type}</h2>
+              <p className="text-lg mt-6 text-blue-200 font-bold">{project.technologies}</p>
             </div>
 
             {/* Description */}
@@ -49,7 +50,7 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
                     className="text-blue-600 hover:text-blue-700"
                     href={project.siteUrl}
                   >
-                    <FiMonitor className="mx-auto text-4xl"/>
+                    <FiMonitor className="mx-auto text-4xl" />
                     <p className="text-md text-center font-semibold">Visit the site</p>
                   </a>
                 </div>
@@ -61,7 +62,7 @@ export const ProjectModal: React.FC<ModalProps> = ({ handleClick, project }) => 
                     className="text-blue-600 hover:text-blue-700"
                     href={project.codeUrl}
                   >
-                    <FaGithub className="mx-auto text-4xl"/>
+                    <FaGithub className="mx-auto text-4xl" />
                     <p className="text-md text-center font-semibold">Visit the code</p>
                   </a>
                 </div>
