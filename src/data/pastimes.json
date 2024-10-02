@@ -1,16 +1,6 @@
 {
   "pastimes": [
     {
-      "title": "Chairperson, Kopernikus School Parents Association",
-      "dates": "2019 - present",
-      "images": [
-        {
-          "src": "foerderverein-cropped.png",
-          "alt": "Kopernikus School Parents Association"
-        }
-      ]
-    },
-    {
       "title": "Musician and songwriter",
       "description": ["Guitarist and songwriter", "Singer, guitarist and songwriter in the band 'Blues Jab'"],
       "images": [
@@ -37,6 +27,16 @@
           "icon": "blues-jab.png",
           "description": "Visit Blues Jab's website",
           "url": "https://www.bluesjab.de/"
+        }
+      ]
+    },
+    {
+      "title": "Chairperson, Kopernikus School Parents Association",
+      "dates": "2019 - 2024",
+      "images": [
+        {
+          "src": "foerderverein-cropped.png",
+          "alt": "Kopernikus School Parents Association"
         }
       ]
     }
