@@ -27,6 +27,8 @@ export const Experience: React.FC = () => {
         <div className="flex flex-row flex-wrap justify-center">
           <Fade
             cascade
+            triggerOnce={true}
+            damping={0.2}
             direction={"up"}
             duration={700}
           >

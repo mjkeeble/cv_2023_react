@@ -2,7 +2,7 @@ import React from "react";
 
 export const Colors: React.FC = () => {
   return (
-    <div className="hidden">
+    <div>
       <div className="flex h-10 flex-row">
         <div className="w-16 text-blue">Blue</div>
         <div className="w-16 bg-blue-100 text-white">100</div>

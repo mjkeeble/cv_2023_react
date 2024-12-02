@@ -25,7 +25,7 @@ export const About = () => {
               Coupled with my coding proficiency, I craft solutions that embody the utmost excellence in both design and
               functionality.
             </p>
-            <Zoom fraction={1}>
+            <Zoom fraction={1} triggerOnce={true}>
               <div className="mt-5 max-w-[calc(100vw_*_0.95)] rounded-full bg-blue-700 px-6 py-4">
                 <p className="rounded-lg px-4 text-center text-xl font-semibold text-blue-300 md:text-2xl lg:px-6">
                   I'm available for employment in the Berlin area on an in-office or hybrid basis. If you think I'd be a
@@ -33,7 +33,7 @@ export const About = () => {
                 </p>{" "}
                 <a
                   className="text-xl font-black text-papaya-400 hover:text-papaya-300 md:text-2xl"
-                  href="mailto:mark@keeble.de"
+                  href="mailto:mark@keeble.email"
                 >
                   Contact me today!
                 </a>

@@ -65,8 +65,8 @@ export default function SimpleSlider() {
     arrows: false,
     className: "px-10",
     infinite: true,
-    speed: 3000,
-    slidesToShow: 5,
+    speed: 2000,
+    slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 100,
@@ -89,7 +89,7 @@ export default function SimpleSlider() {
       {
         breakpoint: 540,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       }
