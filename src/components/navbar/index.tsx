@@ -205,7 +205,7 @@ export const Navbar: React.FC = () => {
 
                 <a
                   className="cursor-pointer border-b-2 border-white px-1 text-3xl text-blue-600 transition hover:border-blue-300 hover:text-blue-300"
-                  href="mailto:mark@keeble.de"
+                  href="mailto:mark@keeble.email"
                 >
                   <MdEmail />
                 </a>
