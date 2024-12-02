@@ -1,6 +1,6 @@
 import "./App.css";
 import { About, Education, Experience, Footer, Hero, Navbar, Parallax, Pastimes, ProjectSection } from "./components";
-import { Colors } from "./components/colors";
+// import { Colors } from "./components/colors";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         id="Home"
         className="m-0 flex w-screen max-w-[1400px]  flex-col bg-white p-0 font-sans"
       >
-        <Colors />
+        {/* <Colors /> */}
         <Hero />
         <Navbar />
         <About />

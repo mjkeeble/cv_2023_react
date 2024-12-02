@@ -4,7 +4,7 @@
       "title": "BluesPrompter",
       "type": "Teleprompter app for gigging musicians",
       "technologies": "React | TypeScript | tailwindcss | Vite | Arduino",
-      "description": "Concieved as a DIY alternative to products like the <a href='https://www.stageprompter.co.uk/'>Stageprompter</a>, <strong>songPrompter</strong> is a stand-alone app that displays lyrics and chords, song structures or presentation notes on a floor-standing monitor, all easily controlled by footswitch for a relaxed and confident stage experience for performers everywhere.",
+      "description": "Concieved as a DIY alternative to products like the <a href='https://www.stageprompter.co.uk/'>Stageprompter</a>, <strong>BluesPrompter</strong> is a stand-alone app that displays lyrics and chords, song structures or presentation notes on a floor-standing monitor, all easily controlled by footswitch for a relaxed and confident stage experience for performers everywhere.",
       "codeUrl": "https://github.com/mjkeeble/BluesPrompter",
       "image": "BluesPrompter_logo_new4.png"
     },

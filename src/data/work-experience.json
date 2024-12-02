@@ -9,14 +9,17 @@
       "pictureSource": "Image by <a href='https://www.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_38669425.htm'>Freepik</a>",
       "positions": [
         {
-          "positionTitle": "Junior Developer",
-          "positionStartDate": "2021-07-05T09:00:00+01:00"
+          "positionTitle": "Web Developer",
+          "positionStartDate": "2021-07-05T09:00:00+01:00",
+          "positionEndDate": "2024-06-30T00:00:00+01:00"
         }
       ],
       "responsibilities": [
-        "Contributed to the conception and full-stack development of internal process and administration tools with TypeScript, React, GraphQL, SQL and PostgreSQL",
-        "Developed unit (Jest) and end-to-end (Cypress) tests",
-        "Agile-based product management including scoping, definition and delivery of new system areas, task definition and sprint management"
+        "<b>Managed team workflow and pipelines</b> within an <b>Agile product management</b> framework, leading <b>scoping, planning, and delivery</b> of new system features, <b>defining tasks, managing sprints</b> and maintaining comprehensive documentation",
+        "<b>Conceived and implemented</b> full-stack process and administration tools, leveraging TypeScript, GraphQL, SQL, PostgreSQL and React, enabling new product introductions and improving productivity",
+        "<b>Designed, scoped, and built</b> a new commenting system, overseeing <b>database migration</b>, development of <b>backend functions</b>, and seamless <b>UI integration</b>, improving user interaction and functionality",
+        "Ensured comprehensive <b>unit and end-to-end test coverage</b> using <b>Jest</b> and <b>Cypress</b> to ensure robust functionality and prevent bugs in production.",
+        "<b>Conducted regular code reviews</b> and <b>collaborated with QA team</b> to ensure high quality code"
       ]
     },
     {
@@ -40,13 +43,12 @@
         }
       ],
       "responsibilities": [
-        "Coordinated financial and credit risk governance for more than 400 major bids. Analysed risk/return profiles and briefed the CFO on a weekly basis",
-        "Managed a €500 million supply-chain finance programme with over 140 suppliers",
-        "Developed and organised structured financial and commercial solutions worth over €500 million for customers",
-        "Implemented database tools for effective management of supplier financing contracts",
-        "Oversaw the development and auditing of financial models for multi-billion-euro bids",
-        "Managed the replacement of over 380 guarantees for suppliers and customers against short deadlines",
-        "Developed and delivered internal training on financial topics"
+        "<b>Directed financial and credit risk governance</b> for more than <b>400 bids</b>, ensuring competitiveness and compliance, and mitigating risk across high-value contracts, briefed senior management in preparation for bid process gate reviews",
+        "<b>Defined key financial deliverables</b> for gate reviews",
+        "<b>Implemented a global supply-chain finance program</b> encompassing over 150 supplier agreements delivering a <b>€450 million liquidity improvement</b> and working capital cost reduction",
+        "<b>Created and maintained database tools</b> to organise governance processes and manage supplier financing contracts",
+        "<b>Led the execution of structured financial solutions</b> totalling over €500 million, collaborating with cross-functional, multi-disciplinary teams to meet customer needs",
+        "<b>Delivered internal and customer training</b> on a range of financial issues including Public-Private Partnership, Leasing, trade finance and inventory accounting"
       ]
     },
     {
@@ -66,9 +68,9 @@
         }
       ],
       "responsibilities": [
-        "Authored management training materials and managed two EU projects: 'Vocational Training Centres in Road Transport' and 'Internal Russian Waterways'",
-        "Prepared business plans for transport training centres in EU accession countries",
-        "Organised a study tour for 30 Russian port managers with topics including general management, finance and marketing"
+        "<b>Managed EU-funded projects</b> to establish road transport training centres in EU accession countries and modernise management of Russian ports",
+        "<b>Prepared business plans</b> for two road transport training centres",
+        "<b>Organised study tour</b> for 20 Russian port managers and <b>prepared training materials</b> in four management fields (finance, human resources, marketing and strategy)"
       ]
     },
     {
@@ -86,9 +88,9 @@
         }
       ],
       "responsibilities": [
-        "Delivered statutory workplace first aid training to over 800 participants",
-        "Developed and delivered first aid training courses for school staff",
-        "Conducted outreach with over 50 schools and supported the integration of first aid training into the school curriculum"
+        "Conducted statutory workplace <b>first aid training to over 800 participants</b>",
+        "Developed and delivered first aid <b>training courses for school staff</b>",
+        "<b>Conducted outreach with over 50 schools</b> and supported the integration of first aid training into the school curriculum"
       ]
     },
     {
@@ -99,7 +101,7 @@
       "companyLogo": "MidlandBank_logo_horizontal.png",
       "positions": [
         {
-          "positionTitle": "Sponsored Student/Intern",
+          "positionTitle": "Sponsored Student / Intern",
           "positionStartDate": "1991-09-18T09:00:00+01:00",
           "positionEndDate": "1994-03-18T09:00:00+01:00"
         }

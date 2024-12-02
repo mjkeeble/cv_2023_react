@@ -1,4 +1,4 @@
-import { Interweave } from "interweave";
+import { Markup } from "interweave";
 import { Zoom } from "react-awesome-reveal";
 import { Job } from "../../types";
 
@@ -34,7 +34,7 @@ export const JobModal: React.FC<ModalProps> = ({ handleClick, job }) => {
                 src={`/images/${job.picture}`}
                 alt={`${job.companyName} image`}
               />
-              <Interweave
+              <Markup
                 className="md:text-md absolute bottom-0 right-0 bg-gray-700 px-2 text-sm opacity-75"
                 content={job.pictureSource}
               />
@@ -91,7 +91,7 @@ const List: React.FC<ListProps> = ({ responsibilities }) => {
               className="mx-2 list-disc px-4 py-2"
               key={responsibility}
             >
-              {responsibility}
+              <Markup content={responsibility} />
             </li>
           ))}
         </ul>
