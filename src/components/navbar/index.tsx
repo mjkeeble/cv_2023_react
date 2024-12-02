@@ -104,7 +104,7 @@ export const Navbar: React.FC = () => {
 
             <a
               className="mx-4 cursor-pointer text-blue-600 hover:text-blue-300"
-              href="mailto:mark@keeble.email"
+              href="mailto:mark@keeble.de"
             >
               <MdEmail />
             </a>

@@ -10,7 +10,7 @@ export const Footer = () => {
           <div className="max-w-[calc(100vw_*_0.95)] rounded-full bg-blue-700 px-14 py-4 lg:px-40">
             <h2 className="rounded text-xl lg:text-4xl">
               Contact me: <br />
-              <p className="text-papaya-400 hover:text-papaya-300">mark@keeble.de</p>
+              <p className="text-papaya-400 hover:text-papaya-300">mark@keeble.email</p>
             </h2>
           </div>
         </Zoom>
