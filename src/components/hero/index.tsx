@@ -7,13 +7,11 @@ export const Hero: React.FC = () => {
         <Fade
           cascade
           duration={1000}
+          className="text-center text-4xl font-bold text-blue-600 min-[445px]:text-6xl sm:text-7xl lg:text-right"
         >
-          <h1 className="text-center text-4xl font-bold text-blue-600 min-[445px]:text-6xl sm:text-7xl md:text-8xl lg:text-right lg:text-8xl xl:text-9xl">
-            Web Development
-          </h1>
-          <h1 className="text-center text-4xl font-bold text-blue-600 min-[445px]:text-6xl sm:text-7xl md:text-8xl lg:text-right lg:text-8xl xl:text-9xl">
-            in
-          </h1>
+          <h1>Web</h1>
+          <h1>Development</h1>
+          <h1>in</h1>
         </Fade>
         <Fade
           className="text-center text-[80px] font-black text-peach-200 min-[445px]:text-[120px] sm:text-[150px] lg:text-right lg:text-[140px] xl:text-[180px]"
